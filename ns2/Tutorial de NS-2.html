@@ -1,0 +1,1240 @@
+
+<!-- saved from url=(0151)http://webcache.googleusercontent.com/search?q=cache:http://www.midiacom.uff.br/~debora/redes1/pdf/tutorial-ns2.pdf&gws_rd=cr&ei=ME-uV4nRI4iDwQTWgIrgAw -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">body { margin-left:0;margin-right:0;margin-top:0; }#google-cache-hdr {background:#f5f5f5 !important;font:13px arial,sans-serif !important;text-align:left !important;color:#202020 !important;border:0 !important;margin:0 !important;border-bottom:1px solid #cecece !important;line-height:16px !important ;padding:16px 28px 24px 28px !important;}#google-cache-hdr * {display:inline !important;font:inherit !important;text-align:inherit !important;color:inherit !important;line-height:inherit !important;background:none !important;border:0 !important;margin:0 !important;padding:0 !important;letter-spacing:0 !important;}#google-cache-hdr a {text-decoration:none !important;color:#1a0dab !important;}#google-cache-hdr a:hover { text-decoration:underline !important; }#google-cache-hdr a:visited { color:#609 !important; }#google-cache-hdr div { display:block !important;margin-top:4px !important; }#google-cache-hdr b {font-weight:bold !important;display:inline-block !important;direction:ltr !important;}pre { word-wrap:break-word; }pre { white-space:pre-wrap; }</style></head><body bgcolor="#ffffff" vlink="blue" link="blue" data-pinterest-extension-installed="cr1.39.2"><div id="google-cache-hdr" dir="ltr"><div>Esta é a versão em html do arquivo <a href="http://www.midiacom.uff.br/~debora/redes1/pdf/tutorial-ns2.pdf" dir="ltr">http://www.midiacom.uff.br/~debora/redes1/pdf/tutorial-ns2.pdf</a>.<br> <b><font color="#0039b6">G</font> <font color="#c41200">o</font> <font color="#f3c518">o</font> <font color="#0039b6">g</font> <font color="#30a72f">l</font> <font color="#c41200">e</font></b> cria automaticamente versões em texto de documentos à medida que vasculha a web.</div></div><div style="position:relative;margin:8px;">
+
+
+
+<meta name="CreationDate" content="D:20091126124947">
+<meta name="Producer" content="Acrobat Distiller 4.0 for Windows">
+<meta name="ModDate" content="D:20091126124948-01&#39;00&#39;">
+<title>Tutorial de NS-2</title>
+
+<table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="1"><b>Page 1</b></a></font></td></tr></tbody></table><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:1367;left:442"><nobr>1</nobr></div>
+</span></font>
+<font size="5" face="Times"><span style="font-size:37px;font-family:Times">
+<div style="position:absolute;top:739;left:307"><nobr><b>Tutorial de NS-2</b></nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:19px;font-family:Times">
+<div style="position:absolute;top:1066;left:174"><nobr><b>Lucas Coelho Gonçalves e Marcos Estevo de Oliveira Corrêa</b></nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:1193;left:394"><nobr><b>Julho de 2005</b></nobr></div>
+</span></font>
+
+<div style="position:absolute;top:1438;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="2"><b>Page 2</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:2630;left:442"><nobr>2</nobr></div>
+<div style="position:absolute;top:1549;left:423"><nobr><b>Índice</b></nobr></div>
+<div style="position:absolute;top:1569;left:128"><nobr>Tutorial de NS-2 ............................................................................................................... 1</nobr></div>
+<div style="position:absolute;top:1590;left:128"><nobr>1. INTRODUÇÃO ............................................................................................................ 4</nobr></div>
+<div style="position:absolute;top:1610;left:128"><nobr>2. NETWORK SIMULATOR .......................................................................................... 5</nobr></div>
+<div style="position:absolute;top:1631;left:146"><nobr>2.1 CRIANDO UMA SIMULAÇÃO ........................................................................... 6</nobr></div>
+<div style="position:absolute;top:1652;left:200"><nobr>• Criação do objeto simulador (escalonador de eventos):................................. 7</nobr></div>
+<div style="position:absolute;top:1672;left:200"><nobr>• Abertura de arquivos para análise posterior (trace):....................................... 7</nobr></div>
+<div style="position:absolute;top:1693;left:200"><nobr>• Criação da topologia da rede (nós e enlaces): ................................................ 7</nobr></div>
+<div style="position:absolute;top:1713;left:200"><nobr>• Criação dos agentes da camada de transporte e conexão com nós:................ 9</nobr></div>
+<div style="position:absolute;top:1734;left:200"><nobr>• Criação dos geradores de tráfego e conexão com os agentes da camada de</nobr></div>
+<div style="position:absolute;top:1755;left:200"><nobr>transporte: ......................................................................................................... 9</nobr></div>
+<div style="position:absolute;top:1776;left:200"><nobr>• Programação dos eventos da simulação (dinâmica):.................................... 10</nobr></div>
+<div style="position:absolute;top:1796;left:200"><nobr>• Fechamento da simulação, animação (NAM) e geração de estatísticas:...... 10</nobr></div>
+<div style="position:absolute;top:1817;left:200"><nobr>• Iniciando a simulação:.................................................................................. 11</nobr></div>
+<div style="position:absolute;top:1838;left:146"><nobr>2.2. CAMADA DE REDE E ROTEAMENTO.......................................................... 11</nobr></div>
+<div style="position:absolute;top:1859;left:164"><nobr>2.2.1. Roteamento Unicast...................................................................................... 11</nobr></div>
+<div style="position:absolute;top:1880;left:182"><nobr>2.2.1.1. Estático................................................................................................... 11</nobr></div>
+<div style="position:absolute;top:1901;left:182"><nobr>2.2.1.2. Dinâmico................................................................................................ 12</nobr></div>
+<div style="position:absolute;top:1921;left:200"><nobr>• Vetor de distância:........................................................................................ 12</nobr></div>
+<div style="position:absolute;top:1942;left:200"><nobr>• Estado de enlace: .......................................................................................... 12</nobr></div>
+<div style="position:absolute;top:1963;left:182"><nobr>2.2.1.3. Utilizando vários caminhos simultaneamente: ...................................... 13</nobr></div>
+<div style="position:absolute;top:1984;left:182"><nobr>2.2.1.4. Atribuindo custos aos enlaces:............................................................... 14</nobr></div>
+<div style="position:absolute;top:2004;left:182"><nobr>2.2.1.5. Inserindo dinâmica na simulação:.......................................................... 14</nobr></div>
+<div style="position:absolute;top:2024;left:200"><nobr>• Falha de Enlace: ........................................................................................... 14</nobr></div>
+<div style="position:absolute;top:2046;left:146"><nobr>2.3 CAMADA DE TRANSPORTE............................................................................ 14</nobr></div>
+<div style="position:absolute;top:2067;left:164"><nobr>2.3.1. UDP .............................................................................................................. 14</nobr></div>
+<div style="position:absolute;top:2087;left:200"><nobr>• Tamanho do pacote: ..................................................................................... 15</nobr></div>
+<div style="position:absolute;top:2107;left:200"><nobr>• Identificador do fluxo de pacotes: ................................................................ 16</nobr></div>
+<div style="position:absolute;top:2128;left:200"><nobr>• Tempo de vida do pacote: ............................................................................ 16</nobr></div>
+<div style="position:absolute;top:2149;left:164"><nobr>2.3.2 TCP ................................................................................................................ 16</nobr></div>
+<div style="position:absolute;top:2170;left:200"><nobr>• Tamanho da janela: ...................................................................................... 17</nobr></div>
+<div style="position:absolute;top:2190;left:200"><nobr>• Tamanho do pacote: ..................................................................................... 18</nobr></div>
+<div style="position:absolute;top:2211;left:200"><nobr>• Tamanho da janela de congestionamento:.................................................... 18</nobr></div>
+<div style="position:absolute;top:2232;left:200"><nobr>• Tamanho inicial da janela de congestionamento:......................................... 18</nobr></div>
+<div style="position:absolute;top:2253;left:200"><nobr>• Tamanho máximo de rajada: ........................................................................ 19</nobr></div>
+<div style="position:absolute;top:2274;left:182"><nobr>2.3.2.1. Variações do TCP .................................................................................. 19</nobr></div>
+<div style="position:absolute;top:2294;left:200"><nobr>• TCP Tahoe:................................................................................................... 19</nobr></div>
+<div style="position:absolute;top:2315;left:200"><nobr>• TCP Reno: .................................................................................................... 19</nobr></div>
+<div style="position:absolute;top:2336;left:200"><nobr>• TCP Vegas:................................................................................................... 19</nobr></div>
+<div style="position:absolute;top:2357;left:146"><nobr>2.4. CAMADA DE APLICAÇÃO ............................................................................. 20</nobr></div>
+<div style="position:absolute;top:2378;left:164"><nobr>2.4.1. CBR (Constant Bit Rate) .............................................................................. 20</nobr></div>
+<div style="position:absolute;top:2398;left:200"><nobr>• Taxa de envio: .............................................................................................. 20</nobr></div>
+<div style="position:absolute;top:2419;left:200"><nobr>• Intervalo entre pacotes: ................................................................................ 21</nobr></div>
+<div style="position:absolute;top:2440;left:200"><nobr>• Tamanho do pacote: ..................................................................................... 21</nobr></div>
+<div style="position:absolute;top:2461;left:164"><nobr>2.4.2. Exponencial .................................................................................................. 21</nobr></div>
+<div style="position:absolute;top:2481;left:200"><nobr>• Taxa de envio: .............................................................................................. 22</nobr></div>
+<div style="position:absolute;top:2502;left:200"><nobr>• Tamanho do pacote: ..................................................................................... 22</nobr></div>
+<div style="position:absolute;top:2523;left:200"><nobr>• Tempo de transmissão:................................................................................. 22</nobr></div>
+<div style="position:absolute;top:2543;left:200"><nobr>• Tempo de inatividade: .................................................................................. 23</nobr></div>
+<div style="position:absolute;top:2565;left:164"><nobr>2.4.3. FTP (File Transfer Protocol)......................................................................... 23 </nobr></div>
+</span></font>
+
+<div style="position:absolute;top:2701;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="3"><b>Page 3</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:3893;left:442"><nobr>3</nobr></div>
+<div style="position:absolute;top:2811;left:200"><nobr>• Número máximo de pacotes:........................................................................ 24</nobr></div>
+<div style="position:absolute;top:2832;left:164"><nobr>2.4.4. Telnet ............................................................................................................ 24</nobr></div>
+<div style="position:absolute;top:2852;left:200"><nobr>• Intervalo entre pacotes: ................................................................................ 24</nobr></div>
+<div style="position:absolute;top:2874;left:164"><nobr>2.4.5. Gerando e finalizando tráfegos ..................................................................... 25</nobr></div>
+<div style="position:absolute;top:2894;left:146"><nobr>2.5. REDES SEM FIO ................................................................................................ 25</nobr></div>
+<div style="position:absolute;top:2915;left:164"><nobr>2.5.1. Redes Ad-hoc................................................................................................ 25</nobr></div>
+<div style="position:absolute;top:2935;left:200"><nobr>• Tipo de Canal: .............................................................................................. 26</nobr></div>
+<div style="position:absolute;top:2956;left:200"><nobr>• Modelo de Rádio-Propagação: ..................................................................... 26</nobr></div>
+<div style="position:absolute;top:2977;left:200"><nobr>• Interface de Rede:......................................................................................... 26</nobr></div>
+<div style="position:absolute;top:2997;left:200"><nobr>• Subcamada MAC: ........................................................................................ 26</nobr></div>
+<div style="position:absolute;top:3018;left:200"><nobr>• Tipo de Fila: ................................................................................................. 26</nobr></div>
+<div style="position:absolute;top:3039;left:200"><nobr>• Camada de Enlace: ....................................................................................... 26</nobr></div>
+<div style="position:absolute;top:3060;left:200"><nobr>• Antena: ......................................................................................................... 26</nobr></div>
+<div style="position:absolute;top:3081;left:200"><nobr>• Número de nós móveis:................................................................................ 26 </nobr></div>
+</span></font>
+
+<div style="position:absolute;top:3964;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="4"><b>Page 4</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:5156;left:442"><nobr>4</nobr></div>
+<div style="position:absolute;top:4137;left:128"><nobr><b>1. INTRODUÇÃO</b></nobr></div>
+<div style="position:absolute;top:4188;left:182"><nobr>A disciplina de Comunicação de Dados IV tem um programa que vai desde as</nobr></div>
+<div style="position:absolute;top:4219;left:128"><nobr>topologias de rede até os padrões e arquiteturas (TCP/IP, IEEE e OSI). Os conceitos</nobr></div>
+<div style="position:absolute;top:4250;left:128"><nobr>teóricos são apresentados sem oferecer algum tipo de experimentação prática. Isso</nobr></div>
+<div style="position:absolute;top:4281;left:128"><nobr>acaba limitando o aprendizado por parte dos alunos.</nobr></div>
+<div style="position:absolute;top:4312;left:182"><nobr>Os recursos visuais tradicionalmente usados não tem sido suficientes para a</nobr></div>
+<div style="position:absolute;top:4344;left:128"><nobr>compreensão total dos conceitos. Por isso, estamos sugerindo uma nova ferramenta</nobr></div>
+<div style="position:absolute;top:4375;left:128"><nobr>visual para ilustrar os exemplos dados em sala de aula e que poderá ser utilizada como</nobr></div>
+<div style="position:absolute;top:4406;left:128"><nobr>parte da disciplina no desenvolvimento de atividades extras pelos alunos.</nobr></div>
+<div style="position:absolute;top:4437;left:182"><nobr>Este projeto tem por finalidade apresentar simulações que complementem os</nobr></div>
+<div style="position:absolute;top:4468;left:128"><nobr>aspectos teóricos dados em sala de aula. Através dessas simulações, realizadas no</nobr></div>
+<div style="position:absolute;top:4499;left:128"><nobr>Network Simulator 2 (NS-2)[1], pretendemos ajudar os próximos alunos na</nobr></div>
+<div style="position:absolute;top:4530;left:128"><nobr>compreensão dos conceitos dessa disciplina.</nobr></div>
+<div style="position:absolute;top:4561;left:182"><nobr>No capítulo 2 damos uma introdução sobre o NS-2 e apresentamos os passos</nobr></div>
+<div style="position:absolute;top:4592;left:128"><nobr>para a criação de uma simulação. Neste ponto inicial explicamos a função de cada passo</nobr></div>
+<div style="position:absolute;top:4623;left:128"><nobr>na criação do script. Em seguida apresentamos algumas funções e conceitos da camada</nobr></div>
+<div style="position:absolute;top:4654;left:128"><nobr>de rede, transporte e aplicação que podem ser exploradas pelo simulador. Ao fim do</nobr></div>
+<div style="position:absolute;top:4685;left:128"><nobr>capítulo 2 falamos sobre a implementação de redes sem fio.</nobr></div>
+<div style="position:absolute;top:4716;left:182"><nobr>No capítulo 3 descrevemos as simulações desenvolvidas com sucesso neste</nobr></div>
+<div style="position:absolute;top:4747;left:128"><nobr>projeto. Apresentamos sobre cada uma das simulações os conceitos abordados por ela e</nobr></div>
+<div style="position:absolute;top:4778;left:128"><nobr>é feita uma breve descrição do seu funcionamento.</nobr></div>
+<div style="position:absolute;top:4809;left:182"><nobr>No capítulo 4 apresentamos as conclusões finais do projeto, dos trabalhos</nobr></div>
+<div style="position:absolute;top:4840;left:128"><nobr>realizados durante sua elaboração e do alcance dos nossos objetivos. </nobr></div>
+</span></font>
+
+<div style="position:absolute;top:5227;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="5"><b>Page 5</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:6419;left:442"><nobr>5</nobr></div>
+<div style="position:absolute;top:5400;left:128"><nobr><b>2. NETWORK SIMULATOR</b></nobr></div>
+<div style="position:absolute;top:5462;left:182"><nobr>O Network Simulator é um simulador de eventos discreto resultante de um</nobr></div>
+<div style="position:absolute;top:5493;left:128"><nobr>projeto conhecido como VINT (Virtual InterNetwork Testbed). Dentre outros,</nobr></div>
+<div style="position:absolute;top:5524;left:128"><nobr>compõem esse projeto a DARPA, USC/ISI, Xerox PARC, LBNL, e a Universidade de</nobr></div>
+<div style="position:absolute;top:5555;left:128"><nobr>Berkeley. Uma grande vantagem do Network Simulator (NS) está no fato de ele ser</nobr></div>
+<div style="position:absolute;top:5586;left:128"><nobr>totalmente gratuito e com código fonte aberto, o que permite ao usuário fazer os ajustes</nobr></div>
+<div style="position:absolute;top:5617;left:128"><nobr>que precisar. O simulador oferece suporte à simulação de um grande número de</nobr></div>
+<div style="position:absolute;top:5648;left:128"><nobr>tecnologias de rede (com e sem fio), diferentes cenários baseados nos protocolos TCP e</nobr></div>
+<div style="position:absolute;top:5679;left:128"><nobr>UDP, diversas políticas de fila, caracterização de tráfego com diversas distribuições</nobr></div>
+<div style="position:absolute;top:5710;left:128"><nobr>estatísticas e muito mais.</nobr></div>
+<div style="position:absolute;top:5741;left:182"><nobr>A programação do NS é feita em duas linguagens: C++ para a estrutura básica</nobr></div>
+<div style="position:absolute;top:5772;left:128"><nobr>(protocolos, agentes, etc) e OTCL[2] (Object-oriented Tool Command Language) para</nobr></div>
+<div style="position:absolute;top:5803;left:128"><nobr>uso como <i>fronten</i>d. OTCL é uma linguagem interpretada, desenvolvida pelo MIT. Nela</nobr></div>
+<div style="position:absolute;top:5834;left:128"><nobr>serão efetivamente escritas as simulações. O motivo para se utilizar duas linguagens de</nobr></div>
+<div style="position:absolute;top:5865;left:128"><nobr>programação baseia-se em duas diferentes necessidades. De um lado existe a</nobr></div>
+<div style="position:absolute;top:5896;left:128"><nobr>necessidade de uma linguagem mais robusta para a manipulação de bytes, pacotes e</nobr></div>
+<div style="position:absolute;top:5927;left:128"><nobr>para implementar algoritmos que rodem um grande conjunto de dados. Nesse contexto</nobr></div>
+<div style="position:absolute;top:5958;left:128"><nobr>C++, que é uma linguagem compilada e de uso tradicional, mostrou-se a ferramenta</nobr></div>
+<div style="position:absolute;top:5989;left:128"><nobr>mais eficaz. De outro lado é fato que, durante o processo de simulação, ajustes são</nobr></div>
+<div style="position:absolute;top:6021;left:128"><nobr>necessários com certa freqüência. Muda-se o tamanho do enlace e faz-se um teste,</nobr></div>
+<div style="position:absolute;top:6052;left:128"><nobr>muda-se o atraso e faz-se um teste, acrescenta-se um nó e faz-se um teste. Enfim,</nobr></div>
+<div style="position:absolute;top:6082;left:128"><nobr>haveria um desgaste muito grande se, a cada mudança de parâmetro, e elas são muitas</nobr></div>
+<div style="position:absolute;top:6114;left:128"><nobr>em uma simulação, houvesse a necessidade de se compilar o programa para testá-lo. O</nobr></div>
+<div style="position:absolute;top:6145;left:128"><nobr>uso da linguagem OTCL, que é interpretada, evita esse desgaste por parte do usuário,</nobr></div>
+<div style="position:absolute;top:6176;left:128"><nobr>pois há uma simplificação no processo interativo de mudar e re-executar o modelo.</nobr></div>
+<div style="position:absolute;top:6207;left:181"><nobr>A noção de tempo no NS é obtida através de unidades de simulação que podem</nobr></div>
+<div style="position:absolute;top:6238;left:128"><nobr>ser associadas, para efeitos didáticos, a segundos. <font style="font-size:12px">A </font>rede é construída usando nós os</nobr></div>
+<div style="position:absolute;top:6269;left:128"><nobr>quais são conectados por meio de enlaces. Eventos são escalonados para passar entre os</nobr></div>
+<div style="position:absolute;top:6300;left:128"><nobr>nós através dos enlaces. Nós e enlaces podem ter várias propriedades associadas a eles.</nobr></div>
+<div style="position:absolute;top:6331;left:128"><nobr>Agentes podem ser associados aos nós e eles são responsáveis pela geração de</nobr></div>
+<div style="position:absolute;top:6362;left:128"><nobr>diferentes pacotes. A fonte de tráfego é uma aplicação ao qual é associado um agente </nobr></div>
+</span></font>
+
+<div style="position:absolute;top:6490;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="6"><b>Page 6</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:7682;left:442"><nobr>6</nobr></div>
+<div style="position:absolute;top:6600;left:128"><nobr>particular. <font style="font-size:12px">Os </font>agentes precisam de um receptor que receberá seus pacotes. No caso do</nobr></div>
+<div style="position:absolute;top:6631;left:128"><nobr>agente <i>tcp (transmission control protocol) </i>esse receptor chama-se <i>sink </i>(tanque) e tem a</nobr></div>
+<div style="position:absolute;top:6663;left:128"><nobr>incumbência de gerar os pacotes de reconhecimento <i>(ACK - Acknowledg</i>e). No caso do</nobr></div>
+<div style="position:absolute;top:6694;left:128"><nobr>agente <i>udp(user datagram protocol) </i>o receptor chama-se <i>null </i>(nulo).</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6999;left:313"><nobr><b>Figura 1 </b>Estrutura dos objetos da simulação</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:7084;left:128"><nobr><b>2.1 CRIANDO UMA SIMULAÇÃO</b></nobr></div>
+<div style="position:absolute;top:7104;left:182"><nobr>Para criar uma simulação é preciso escrever um script OTcl, que será lido por</nobr></div>
+<div style="position:absolute;top:7135;left:128"><nobr>um interpretador e gerará uma saída específica. Para facilitar a criação desse script,</nobr></div>
+<div style="position:absolute;top:7166;left:128"><nobr>recomenda-se seguir o roteiro abaixo, que representa as principais etapas de construção</nobr></div>
+<div style="position:absolute;top:7197;left:128"><nobr>de uma simulação, adaptando-o de acordo com o tipo de simulação pretendida:</nobr></div>
+<div style="position:absolute;top:7259;left:128"><nobr>• Criação do objeto simulador (escalonador de eventos);</nobr></div>
+<div style="position:absolute;top:7290;left:128"><nobr>• Abertura de arquivos para análise posterior (<i>trace</i>);</nobr></div>
+<div style="position:absolute;top:7321;left:128"><nobr>• Criação da topologia da rede (nós e enlaces);</nobr></div>
+<div style="position:absolute;top:7352;left:128"><nobr>• Criação dos agentes da camada de transporte e conexão com os nós;</nobr></div>
+<div style="position:absolute;top:7383;left:128"><nobr>• Criação dos geradores de tráfego e conexão com os agentes da camada de transporte;</nobr></div>
+<div style="position:absolute;top:7414;left:128"><nobr>• Programação dos eventos da simulação (dinâmica);</nobr></div>
+<div style="position:absolute;top:7445;left:128"><nobr>• Fechamento da simulação, animação (NAM) e geração de estatísticas.</nobr></div>
+<div style="position:absolute;top:7508;left:182"><nobr>A programação em OTcl requer conhecimentos sobre a sintaxe utilizada pelo</nobr></div>
+<div style="position:absolute;top:7539;left:128"><nobr>NS. A seguir apresentaremos as principais classes que são comuns à maioria das</nobr></div>
+<div style="position:absolute;top:7570;left:128"><nobr>simulações. </nobr></div>
+</span></font>
+
+<div style="position:absolute;top:7753;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="7"><b>Page 7</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:8945;left:442"><nobr>7</nobr></div>
+<div style="position:absolute;top:7864;left:128"><nobr><b>• Criação do objeto simulador (escalonador de eventos):</b></nobr></div>
+<div style="position:absolute;top:7884;left:182"><nobr>Para iniciar qualquer simulação, é preciso ajustar a variável que identifica o</nobr></div>
+<div style="position:absolute;top:7915;left:128"><nobr>início da simulação, conforme a linha abaixo:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:7977;left:128"><nobr>set ns [new Simulator]</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:8028;left:182"><nobr>Esta linha define a geração de uma instância do objeto simulador e a associa</nobr></div>
+<div style="position:absolute;top:8059;left:128"><nobr>com a variável ‘ns’, realizando as seguintes tarefas:</nobr></div>
+<div style="position:absolute;top:8090;left:128"><nobr>• Inicializa o formato dos pacotes;</nobr></div>
+<div style="position:absolute;top:8121;left:128"><nobr>• Cria um escalonador de eventos;</nobr></div>
+<div style="position:absolute;top:8152;left:128"><nobr>• Seleciona o formato padrão de endereçamento.</nobr></div>
+<div style="position:absolute;top:8215;left:128"><nobr><b>• Abertura de arquivos para análise posterior (trace):</b></nobr></div>
+<div style="position:absolute;top:8236;left:182"><nobr>A seguir, pode-se gerar um arquivo <i>trace </i>que servirá de base para a construção</nobr></div>
+<div style="position:absolute;top:8266;left:128"><nobr>de uma animação gráfica, de acordo com o cenário utilizado. Essa é uma etapa opcional</nobr></div>
+<div style="position:absolute;top:8298;left:128"><nobr>e pode ser eliminada, caso não seja necessário uma simulação gráfica.</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:8359;left:128"><nobr>set nf [open out.nam w]</nobr></div>
+<div style="position:absolute;top:8384;left:128"><nobr>$ns namtrace-all $nf</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:8436;left:182"><nobr>A primeira linha acima cria um arquivo (ou abre, caso já exista um) com a</nobr></div>
+<div style="position:absolute;top:8467;left:128"><nobr>extensão ‘<i>.nam</i>’, que será lido pelo <i>Network Animator </i>(NAM), que é a aplicação</nobr></div>
+<div style="position:absolute;top:8498;left:128"><nobr>responsável por gerar animações gráficas das simulações. A segunda linha diz ao</nobr></div>
+<div style="position:absolute;top:8529;left:128"><nobr>simulador para gravar os passos da simulação no formato de entrada do NAM, ou seja,</nobr></div>
+<div style="position:absolute;top:8560;left:128"><nobr>no arquivo ‘<i>out.nam</i>’ gerado na linha anterior. Similarmente, pode-se usar a função</nobr></div>
+<div style="position:absolute;top:8591;left:128"><nobr>‘<i>trace-all</i>’ para gravar arquivos de <i>trace </i>com informações em formato geral,</nobr></div>
+<div style="position:absolute;top:8622;left:128"><nobr>normalmente utilizados para análises de simulações. As linhas abaixo mostram a sintaxe</nobr></div>
+<div style="position:absolute;top:8653;left:128"><nobr>para este tipo de saída:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:8715;left:128"><nobr>set tf [open out.tr w]</nobr></div>
+<div style="position:absolute;top:8740;left:128"><nobr>$ns trace-all $tf</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:8792;left:128"><nobr><b>• Criação da topologia da rede (nós e enlaces):</b></nobr></div>
+<div style="position:absolute;top:8813;left:182"><nobr>A criação da topologia da rede é um dos pontos primordiais de uma simulação.</nobr></div>
+<div style="position:absolute;top:8844;left:128"><nobr>É preciso que se faça um planejamento cuidadoso para que os nós e enlaces representem </nobr></div>
+</span></font>
+
+<div style="position:absolute;top:9016;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="8"><b>Page 8</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:10208;left:442"><nobr>8</nobr></div>
+<div style="position:absolute;top:9126;left:128"><nobr>um cenário mais realístico. As linhas abaixo definem a criação de 2 nós, chamados de</nobr></div>
+<div style="position:absolute;top:9157;left:128"><nobr>n0 e n1.</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:9219;left:128"><nobr>set n0 [$ns node]</nobr></div>
+<div style="position:absolute;top:9244;left:128"><nobr>set n1 [$ns node]</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:9296;left:182"><nobr>O parâmetro [$ns node] define a criação de um nó para o objeto simulador ‘<i>ns</i>’,</nobr></div>
+<div style="position:absolute;top:9327;left:128"><nobr>criado no início da simulação. Em seguida, é necessário criar os enlaces para que os nós</nobr></div>
+<div style="position:absolute;top:9358;left:128"><nobr>possam se comunicar. A sintaxe utilizada varia de acordo com a tecnologia de rede</nobr></div>
+<div style="position:absolute;top:9389;left:128"><nobr>empregada. Utillizaremos neste exemplo um enlace <i>full-duplex </i>entre 2 nós:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:9451;left:128"><nobr>$ns duplex-link $n0 $n1 1Mb 10ms DropTail</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:9502;left:182"><nobr>A linha anterior define a criação de um enlace <i>full-duplex </i>(<i>duplex-link</i>) entre os</nobr></div>
+<div style="position:absolute;top:9533;left:128"><nobr>nós n0 e n1, com capacidade de 1 Mbit/s e retardo de 10 ms. O último parâmetro define</nobr></div>
+<div style="position:absolute;top:9564;left:128"><nobr>o tipo de fila utilizado, onde ‘<i>DropTail</i>’ representa o algoritmo FIFO (<i>First In, First</i></nobr></div>
+<div style="position:absolute;top:9595;left:128"><nobr><i>Out</i>).</nobr></div>
+<div style="position:absolute;top:9627;left:182"><nobr>Para facilitar a geração de múltiplos nós e enlaces, é possível criar um laço de</nobr></div>
+<div style="position:absolute;top:9657;left:128"><nobr>repetição, conforme mostrado a seguir, onde a variável ‘<i>numNode</i>’ define a quantidade</nobr></div>
+<div style="position:absolute;top:9689;left:128"><nobr>de nós da simulação:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:9750;left:128"><nobr>set numNode 8</nobr></div>
+<div style="position:absolute;top:9801;left:128"><nobr><i># Criação dos nós</i></nobr></div>
+<div style="position:absolute;top:9826;left:128"><nobr>for {set i 0} {$i &lt; $numNode} {incr i} {</nobr></div>
+<div style="position:absolute;top:9852;left:128"><nobr>set n($i) [$ns node]</nobr></div>
+<div style="position:absolute;top:9877;left:128"><nobr>}</nobr></div>
+<div style="position:absolute;top:9929;left:128"><nobr><i># Criação dos enlaces</i></nobr></div>
+<div style="position:absolute;top:9954;left:128"><nobr>for {set i 0} {$i &lt; $numNode} {incr i} {</nobr></div>
+<div style="position:absolute;top:9979;left:128"><nobr>for {set j [expr ($i + 1)]} {$j &lt; $numNode} {incr j} {</nobr></div>
+<div style="position:absolute;top:10005;left:128"><nobr>$ns duplex-link $n($i) $n($j) 1Mb 10ms DropTail</nobr></div>
+<div style="position:absolute;top:10030;left:128"><nobr>}</nobr></div>
+<div style="position:absolute;top:10056;left:128"><nobr>}</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:10108;left:182"><nobr>A geração de tráfego no NS-2 é baseada em duas classes de objetos, a classe</nobr></div>
+<div style="position:absolute;top:10139;left:128"><nobr><i>Agente </i>e a classe <i>Aplicação</i>. Cada nó na rede que necessite enviar ou receber dados </nobr></div>
+</span></font>
+
+<div style="position:absolute;top:10279;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="9"><b>Page 9</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:11471;left:442"><nobr>9</nobr></div>
+<div style="position:absolute;top:10389;left:128"><nobr>deve ter um agente sobre ele. No topo de um agente roda uma aplicação. A aplicação</nobr></div>
+<div style="position:absolute;top:10420;left:128"><nobr>determina que tipo de tráfego é simulado.</nobr></div>
+<div style="position:absolute;top:10477;left:128"><nobr><b>• Criação dos agentes da camada de transporte e conexão com nós:</b></nobr></div>
+<div style="position:absolute;top:10498;left:182"><nobr>Para que se possa realizar a implementação de protocolos de transporte (TCP e</nobr></div>
+<div style="position:absolute;top:10529;left:128"><nobr>UDP) é necessária a criação de agentes, que são componentes da arquitetura NS</nobr></div>
+<div style="position:absolute;top:10560;left:128"><nobr>responsáveis pela simulação destes protocolos. Os agentes criam um canal de</nobr></div>
+<div style="position:absolute;top:10591;left:128"><nobr>comunicação entre os nós transmissor e receptor. </nobr></div>
+<div style="position:absolute;top:10622;left:182"><nobr>O código abaixo mostra a criação de um agente UDP, anexando-o ao nó n0</nobr></div>
+<div style="position:absolute;top:10653;left:128"><nobr>(emissor).</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:10709;left:128"><nobr>set udp0 [new Agent/UDP]</nobr></div>
+<div style="position:absolute;top:10735;left:128"><nobr>$ns attach-agent $n0 $udp0</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:10786;left:182"><nobr>A seguir, deve-se criar um agente receptor ( <i>Null )</i>, cuja função é apenas receber</nobr></div>
+<div style="position:absolute;top:10818;left:128"><nobr>os pacotes enviados a ele. O código abaixo mostra a sua criação, anexando-o ao nó n1</nobr></div>
+<div style="position:absolute;top:10848;left:128"><nobr>(receptor).</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:10941;left:128"><nobr>set null0 [new Agent/Null]</nobr></div>
+<div style="position:absolute;top:10966;left:128"><nobr>$ns attach-agent $n1 $null0</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:11018;left:182"><nobr>A linha abaixo efetivamente estabelece o canal de comunicação (sessão) entre o</nobr></div>
+<div style="position:absolute;top:11049;left:128"><nobr>emissor e o receptor, a nível de transporte.</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:11111;left:128"><nobr>$ns connect $udp0 $null0</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:11162;left:128"><nobr><b>• Criação dos geradores de tráfego e conexão com os agentes da camada de</b></nobr></div>
+<div style="position:absolute;top:11183;left:128"><nobr><b>transporte:</b></nobr></div>
+<div style="position:absolute;top:11204;left:182"><nobr>Após o estabelecimento do canal de comunicação é necessário que um tráfego</nobr></div>
+<div style="position:absolute;top:11235;left:128"><nobr>de uma determinada aplicação seja gerado e transmitido por este. O código abaixo</nobr></div>
+<div style="position:absolute;top:11266;left:128"><nobr>exemplifica a criação de um tráfego CBR (<i>Constant Bit Rate</i>), que geralmente é</nobr></div>
+<div style="position:absolute;top:11297;left:128"><nobr>utilizado para <i>streaming </i>de áudio e/ou vídeo. Alguns parâmetros são necessários, como</nobr></div>
+<div style="position:absolute;top:11328;left:128"><nobr>o tamanho do pacote (em <i>bytes</i>), intervalo de transmissão (em segundos), entre outros.</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:11389;left:128"><nobr>set cbr0 [new Application/Traffic/CBR]</nobr></div>
+<div style="position:absolute;top:11415;left:128"><nobr>$cbr0 set packetSize_ 500</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:11542;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="10"><b>Page 10</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:12734;left:438"><nobr>10</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:11652;left:128"><nobr>$cbr0 set interval_ 0.005</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:11703;left:182"><nobr>Feito isso, é necessário anexar a aplicação criada a um agente da camada de</nobr></div>
+<div style="position:absolute;top:11735;left:128"><nobr>transporte, conforme mostra a linha abaixo:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:11796;left:128"><nobr>$cbr0 attach-agent $udp0</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:11847;left:128"><nobr><b>• Programação dos eventos da simulação (dinâmica):</b></nobr></div>
+<div style="position:absolute;top:11868;left:182"><nobr>Uma das etapas mais importantes em uma simulação é definir o comportamento</nobr></div>
+<div style="position:absolute;top:11899;left:128"><nobr>que esta terá durante a sua execução (ou seja, os eventos que ocorrerão na simulação).</nobr></div>
+<div style="position:absolute;top:11930;left:128"><nobr>Como o NS é um simulador orientado a eventos, a definição da dinâmica da simulação</nobr></div>
+<div style="position:absolute;top:11962;left:128"><nobr>pode ser feita mais facilmente.</nobr></div>
+<div style="position:absolute;top:11992;left:182"><nobr>Para isso, atribui-se um tempo total de simulação e, durante este período, pode-</nobr></div>
+<div style="position:absolute;top:12024;left:128"><nobr>se invocar eventos específicos, como início de tráfegos, quedas ou perdas de dados nos</nobr></div>
+<div style="position:absolute;top:12055;left:128"><nobr>enlaces, entre outros.</nobr></div>
+<div style="position:absolute;top:12086;left:182"><nobr>No código a seguir, a aplicação CBR é iniciada no tempo 0.5s e finalizada em</nobr></div>
+<div style="position:absolute;top:12117;left:128"><nobr>4.5s. Após 5.0s, é chamado o procedimento ‘<i>finish</i>’, que encerra a simulação.</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:12178;left:128"><nobr>$ns at 0.5 "$cbr0 start"</nobr></div>
+<div style="position:absolute;top:12204;left:128"><nobr>$ns at 4.5 "$cbr0 stop"</nobr></div>
+<div style="position:absolute;top:12229;left:128"><nobr>$ns at 5.0 "finish"</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:12280;left:128"><nobr><b>• Fechamento da simulação, animação (NAM) e geração de estatísticas:</b></nobr></div>
+<div style="position:absolute;top:12302;left:182"><nobr>Concluídas as etapas acima, é necessário declarar o fim da simulação, através do</nobr></div>
+<div style="position:absolute;top:12333;left:128"><nobr>procedimento abaixo, que é responsável por fechar e limpar os arquivos de traces já</nobr></div>
+<div style="position:absolute;top:12364;left:128"><nobr>existentes com o mesmo nome, abrir o NAM (caso este seja utilizado) e encerrar</nobr></div>
+<div style="position:absolute;top:12395;left:128"><nobr>efetivamente a simulação. A última linha (<i>$ns run</i>) é responsável por executar a</nobr></div>
+<div style="position:absolute;top:12426;left:128"><nobr>simulação e iniciar o escalonador de eventos do NS.</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:12487;left:128"><nobr>proc finish {} {</nobr></div>
+<div style="position:absolute;top:12513;left:128"><nobr>global ns nf</nobr></div>
+<div style="position:absolute;top:12538;left:128"><nobr>$ns flush-trace</nobr></div>
+<div style="position:absolute;top:12564;left:128"><nobr>close $nf</nobr></div>
+<div style="position:absolute;top:12589;left:128"><nobr>exec nam out.nam &amp;</nobr></div>
+<div style="position:absolute;top:12615;left:128"><nobr>exit 0</nobr></div>
+<div style="position:absolute;top:12640;left:128"><nobr>}</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:12805;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="11"><b>Page 11</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:13997;left:438"><nobr>11</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:12915;left:128"><nobr>$ns run</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:12966;left:128"><nobr><b>• Iniciando a simulação:</b></nobr></div>
+<div style="position:absolute;top:12987;left:182"><nobr>Para executar a simulação usa-se o comando, abaixo, que executa a simulação e</nobr></div>
+<div style="position:absolute;top:13018;left:128"><nobr>abre o NAM, caso este seja usado. </nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:13080;left:128"><nobr><i>$ ns nome_do_script.tcl</i></nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:13157;left:128"><nobr><b>2.2. CAMADA DE REDE E ROTEAMENTO</b></nobr></div>
+<div style="position:absolute;top:13178;left:182"><nobr>Para que ocorra a transferência de pacotes de um nó emissor para um nó receptor</nobr></div>
+<div style="position:absolute;top:13209;left:128"><nobr>existe a necessidade de se determinar que caminho os pacotes devem seguir. Essa tarefa</nobr></div>
+<div style="position:absolute;top:13240;left:128"><nobr>é realizada na camada de rede, mais precisamente pelos protocolos de roteamento da</nobr></div>
+<div style="position:absolute;top:13271;left:128"><nobr>camada de rede. O núcleo do protocolo de roteamento é o algoritmo de roteamento, que</nobr></div>
+<div style="position:absolute;top:13302;left:128"><nobr>tem a função de determinar uma rota adequada entre a origem e o destino dos</nobr></div>
+<div style="position:absolute;top:13333;left:128"><nobr>datagramas.</nobr></div>
+<div style="position:absolute;top:13364;left:182"><nobr>O NS permite a simulação de diversos protocolos de roteamento, dentre os quais</nobr></div>
+<div style="position:absolute;top:13395;left:128"><nobr>serão mostrados os mais utilizados atualmente, como o roteamento estático e os</nobr></div>
+<div style="position:absolute;top:13426;left:128"><nobr>algoritmos dinâmicos, chamados de vetor de distância e estado de enlace.</nobr></div>
+<div style="position:absolute;top:13488;left:128"><nobr><b>2.2.1. Roteamento Unicast</b></nobr></div>
+<div style="position:absolute;top:13509;left:182"><nobr>O roteamento unicast é utilizado na comunicação ponto-a-ponto, quando um</nobr></div>
+<div style="position:absolute;top:13540;left:128"><nobr>emissor cria um canal de comunicação separado para cada destinatário. Por exemplo, se</nobr></div>
+<div style="position:absolute;top:13571;left:128"><nobr>a transmissão é feita entre um emissor e três destinatários, o emissor enviará três vezes o</nobr></div>
+<div style="position:absolute;top:13602;left:128"><nobr>mesmo arquivo, um para cada destinatário.</nobr></div>
+<div style="position:absolute;top:13633;left:182"><nobr>Analisando como esta comunicação é feita, percebe-se que há uma sobrecarga</nobr></div>
+<div style="position:absolute;top:13664;left:128"><nobr>do emissor. À medida que o número de receptores cresce, o congestionamento e o atraso</nobr></div>
+<div style="position:absolute;top:13695;left:128"><nobr>de dados ficarão mais intensos.</nobr></div>
+<div style="position:absolute;top:13757;left:128"><nobr><b>2.2.1.1. Estático</b></nobr></div>
+<div style="position:absolute;top:13778;left:182"><nobr>No roteamento estático as rotas não mudam com muita freqüência e na maioria</nobr></div>
+<div style="position:absolute;top:13809;left:128"><nobr>das vezes uma mudança é ocasionada pela intervenção humana. O roteamento estático é</nobr></div>
+<div style="position:absolute;top:13840;left:128"><nobr>o mecanismo de definição de rotas padrão do NS, que utiliza o algoritmo SPF (Shortest</nobr></div>
+<div style="position:absolute;top:13871;left:128"><nobr>Path First) de Dijkstra. A computação das rotas é feita uma única vez no início da</nobr></div>
+<div style="position:absolute;top:13902;left:128"><nobr>simulação e para isso, o algoritmo utiliza uma matriz de adjacências e os valores de</nobr></div>
+<div style="position:absolute;top:13933;left:128"><nobr>custos de todos os enlaces da topologia. </nobr></div>
+</span></font>
+
+<div style="position:absolute;top:14068;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="12"><b>Page 12</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:15260;left:438"><nobr>12</nobr></div>
+<div style="position:absolute;top:14178;left:182"><nobr>Para utilizar o roteamento estático, usa-se a sintaxe mostrada abaixo. Porém,</nobr></div>
+<div style="position:absolute;top:14209;left:128"><nobr>esse comando é opcional já que esse algoritmo é o padrão usado no NS.</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:14271;left:128"><nobr>$ns rtproto Static</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:14323;left:128"><nobr><b>2.2.1.2. Dinâmico</b></nobr></div>
+<div style="position:absolute;top:14343;left:182"><nobr>No roteamento dinâmico as rotas podem ser alteradas quando há mudanças nas</nobr></div>
+<div style="position:absolute;top:14374;left:128"><nobr>cargas de tráfego ou na topologia da rede. Esses algoritmos podem rodar</nobr></div>
+<div style="position:absolute;top:14405;left:128"><nobr>periodicamente ou na ocorrência de mudanças na rede como, por exemplo, a topologia</nobr></div>
+<div style="position:absolute;top:14436;left:128"><nobr>ou os custos dos enlaces. Serão abordados dois algoritmos de roteamento dinâmicos, o</nobr></div>
+<div style="position:absolute;top:14467;left:128"><nobr>algoritmo de vetor de distâncias e o algoritmo de estado de enlace.</nobr></div>
+<div style="position:absolute;top:14529;left:128"><nobr><b>• Vetor de distância:</b></nobr></div>
+<div style="position:absolute;top:14550;left:182"><nobr>Nesse algoritmo, conhecido também como algoritmo de Bellman-Ford, cada</nobr></div>
+<div style="position:absolute;top:14581;left:128"><nobr>roteador mantém uma tabela (vetor) que armazena a melhor distância para se chegar até</nobr></div>
+<div style="position:absolute;top:14612;left:128"><nobr>cada destino e a rota correspondente. Inicialmente um roteador possui apenas</nobr></div>
+<div style="position:absolute;top:14643;left:128"><nobr>informações de custos de enlaces até seus vizinhos diretamente conectados.</nobr></div>
+<div style="position:absolute;top:14675;left:128"><nobr>Periodicamente, o roteador distribui seu vetor de distâncias aos seus vizinhos,</nobr></div>
+<div style="position:absolute;top:14706;left:128"><nobr>atualizando, dessa forma, as tabelas de roteamento dos mesmos. Quando todas as</nobr></div>
+<div style="position:absolute;top:14737;left:128"><nobr>tabelas de distâncias ficarem completas ocorre o que é chamado de convergência e o</nobr></div>
+<div style="position:absolute;top:14768;left:128"><nobr>algoritmo entra em inatividade até que alguma mudança na rede aconteça. O algoritmo</nobr></div>
+<div style="position:absolute;top:14799;left:128"><nobr>vetor de distâncias é dito descentralizado, pois um nó não tem conhecimento sobre os</nobr></div>
+<div style="position:absolute;top:14830;left:128"><nobr>custos de todos os enlaces da rede, mas somente daqueles diretamente ligados a ele.</nobr></div>
+<div style="position:absolute;top:14861;left:182"><nobr>Para utilizar o roteamento por vetor de distância, usa-se a sintaxe mostrada</nobr></div>
+<div style="position:absolute;top:14892;left:128"><nobr>abaixo:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:14953;left:128"><nobr>$ns rtproto DV</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:15005;left:182"><nobr>Esse algoritmo apresenta problemas como o fato de poder convergir lentamente</nobr></div>
+<div style="position:absolute;top:15036;left:128"><nobr>caso aconteçam alterações na rede, como por exemplo, o aumento no custo de um</nobr></div>
+<div style="position:absolute;top:15067;left:128"><nobr>enlace ou a falha de um enlace.</nobr></div>
+<div style="position:absolute;top:15129;left:128"><nobr><b>• Estado de enlace:</b></nobr></div>
+<div style="position:absolute;top:15150;left:182"><nobr>O algoritmo de estado de enlace é um algoritmo global, uma vez que todos os</nobr></div>
+<div style="position:absolute;top:15181;left:128"><nobr>custos de enlace são conhecidos por todos os nós. Cada nó da rede distribui informações </nobr></div>
+</span></font>
+
+<div style="position:absolute;top:15331;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="13"><b>Page 13</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:16523;left:438"><nobr>13</nobr></div>
+<div style="position:absolute;top:15441;left:128"><nobr>sobre os enlaces conectados diretamente à ele a todos os outros nós da rede através de</nobr></div>
+<div style="position:absolute;top:15472;left:128"><nobr>uma transmissão <i>broadcast</i>.</nobr></div>
+<div style="position:absolute;top:15504;left:182"><nobr>Em seguida, um algoritmo de estado de enlace, como o algoritmo de Dijkstra,</nobr></div>
+<div style="position:absolute;top:15535;left:128"><nobr>calcula o caminho de menor custo entre um nó e todos os outros nós da rede.  Caso</nobr></div>
+<div style="position:absolute;top:15566;left:128"><nobr>ocorra uma mudança na rede o algoritmo é executado novamente. O algoritmo de estado</nobr></div>
+<div style="position:absolute;top:15597;left:128"><nobr>de enlace converge mais rapidamente que o algoritmo vetor de distância em caso de</nobr></div>
+<div style="position:absolute;top:15628;left:128"><nobr>alterações na rede. Para utilizar o roteamento por estado de enlace, usa-se a sintaxe</nobr></div>
+<div style="position:absolute;top:15659;left:128"><nobr>mostrada abaixo:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:15720;left:128"><nobr>$ns rtproto LS</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:15772;left:128"><nobr><b>2.2.1.3. Utilizando vários caminhos simultaneamente:</b></nobr></div>
+<div style="position:absolute;top:15792;left:182"><nobr>Se partindo de um nó existem várias rotas possíveis para um destino particular, é</nobr></div>
+<div style="position:absolute;top:15824;left:128"><nobr>possível fazer com que um tráfego seja dividido entre essas rotas. Para isso, deve-se,</nobr></div>
+<div style="position:absolute;top:15855;left:128"><nobr>primeiramente, utilizar o algoritmo de roteamento vetor de distância. Em seguida, usa-</nobr></div>
+<div style="position:absolute;top:15886;left:128"><nobr>se a sintaxe abaixo:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:15947;left:128"><nobr>Node set multiPath_ 1</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:15999;left:182"><nobr>A linha acima define que todos os nós da topologia utilizarão esse mecanismo de</nobr></div>
+<div style="position:absolute;top:16030;left:128"><nobr>roteamento, caso seja possível.</nobr></div>
+<div style="position:absolute;top:16092;left:182"><nobr>De forma alternativa, pode-se desejar que apenas um nó possua esse mecanismo.</nobr></div>
+<div style="position:absolute;top:16123;left:128"><nobr>Se este for o caso, usam–se os comandos abaixo:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:16184;left:128"><nobr>set n1 [$ns Node]</nobr></div>
+<div style="position:absolute;top:16210;left:128"><nobr>$n1 set multiPath_ 1</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:16262;left:182"><nobr>De acordo com o código acima apenas o nó ‘n1’ enviará dados para várias rotas</nobr></div>
+<div style="position:absolute;top:16293;left:128"><nobr>simultaneamente.</nobr></div>
+<div style="position:absolute;top:16355;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:16385;left:128"><nobr>$ns set [new Simulator]</nobr></div>
+<div style="position:absolute;top:16410;left:128"><nobr>$ns rtproto DV</nobr></div>
+<div style="position:absolute;top:16436;left:128"><nobr>set n1 [$ns Node]</nobr></div>
+<div style="position:absolute;top:16461;left:128"><nobr>$n1 set multiPath_ 1</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:16594;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="14"><b>Page 14</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:17786;left:438"><nobr>14</nobr></div>
+<div style="position:absolute;top:16730;left:128"><nobr><b>2.2.1.4. Atribuindo custos aos enlaces:</b></nobr></div>
+<div style="position:absolute;top:16751;left:182"><nobr>Para atribuir valores de custo a um enlace, utiliza-se o seguinte comando:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:16812;left:128"><nobr>$ns cost $&lt;node1&gt; $&lt;node1&gt; &lt;value&gt;</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:16864;left:182"><nobr>Onde &lt;value&gt; é o valor do custo associado ao enlace entre os nós &lt;node1&gt; e</nobr></div>
+<div style="position:absolute;top:16895;left:128"><nobr>&lt;node2&gt;. O valor padrão para os custos é 1.</nobr></div>
+<div style="position:absolute;top:16957;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:16987;left:128"><nobr>$ns cost $n1 $n2 10</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:17039;left:128"><nobr><b>2.2.1.5. Inserindo dinâmica na simulação:</b></nobr></div>
+<div style="position:absolute;top:17060;left:182"><nobr>Esta seção mostra como simular eventos que podem ocorrer em uma rede real,</nobr></div>
+<div style="position:absolute;top:17091;left:128"><nobr>como a falha de um enlace.</nobr></div>
+<div style="position:absolute;top:17152;left:128"><nobr><b>• Falha de Enlace:</b></nobr></div>
+<div style="position:absolute;top:17174;left:182"><nobr>Para quebrar um enlace usa-se o seguinte comando:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:17235;left:128"><nobr>$ns rtmodel-at &lt;time&gt; down $&lt;node1&gt; $&lt;node2&gt;</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:17287;left:182"><nobr>Onde &lt;time&gt; é o instante em segundos no qual o enlace entre os nós &lt;node1&gt; e</nobr></div>
+<div style="position:absolute;top:17318;left:128"><nobr>&lt;node2&gt; vai falhar.</nobr></div>
+<div style="position:absolute;top:17380;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:17410;left:128"><nobr>$ns rtmodel-at 1.0 down $n0 $n1</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:17487;left:128"><nobr><b>2.3 CAMADA DE TRANSPORTE</b></nobr></div>
+<div style="position:absolute;top:17508;left:182"><nobr>Para simular protocolos da camada de transporte, o NS faz uso de agentes como</nobr></div>
+<div style="position:absolute;top:17539;left:128"><nobr>o agente UDP e o agente TCP, este último podendo ser escolhido diversas variações</nobr></div>
+<div style="position:absolute;top:17570;left:128"><nobr>(como Tahoe, Reno e Vegas) [3]. A seguir, serão abordados com mais detalhes os</nobr></div>
+<div style="position:absolute;top:17601;left:128"><nobr>aspectos de configuração de cada um desses agentes.</nobr></div>
+<div style="position:absolute;top:17663;left:128"><nobr><b>2.3.1. UDP</b></nobr></div>
+<div style="position:absolute;top:17684;left:182"><nobr>O UDP é um protocolo da camada de transporte não orientado a conexão que</nobr></div>
+<div style="position:absolute;top:17715;left:128"><nobr>não oferece garantias para a entrega de dados entre um emissor e um receptor, ou seja, </nobr></div>
+</span></font>
+
+<div style="position:absolute;top:17857;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="15"><b>Page 15</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:19049;left:438"><nobr>15</nobr></div>
+<div style="position:absolute;top:17967;left:128"><nobr>ele não suporta controle de fluxo ou congestionamento, correção de erros ou</nobr></div>
+<div style="position:absolute;top:17998;left:128"><nobr>retransmissão.</nobr></div>
+<div style="position:absolute;top:18030;left:182"><nobr>Para criar um agente UDP, usa-se a seguinte sintaxe:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:18086;left:128"><nobr>set udp0 [new Agent/UDP]</nobr></div>
+<div style="position:absolute;top:18111;left:128"><nobr>$ns attach-agent $n0 $udp0</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:18163;left:182"><nobr>A primeira linha cria um agente UDP referenciado pela variável 'udp0'. A linha</nobr></div>
+<div style="position:absolute;top:18194;left:128"><nobr>seguinte associa o agente criado a um nó chamado 'n0', que será o nó emissor de</nobr></div>
+<div style="position:absolute;top:18225;left:128"><nobr>pacotes.</nobr></div>
+<div style="position:absolute;top:18256;left:182"><nobr>Em seguida, é necessário configurar um receptor, que pode ser feito de acordo</nobr></div>
+<div style="position:absolute;top:18287;left:128"><nobr>com o exemplo abaixo:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:18349;left:128"><nobr>set null0 [new Agent/Null]</nobr></div>
+<div style="position:absolute;top:18374;left:128"><nobr>$ns attach-agent $n1 $null0</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:18426;left:182"><nobr>O agente Null é responsável por apenas receber pacotes sem realizar nenhum</nobr></div>
+<div style="position:absolute;top:18457;left:128"><nobr>tratamento adicional, e este é associado ao nó 'n1'.</nobr></div>
+<div style="position:absolute;top:18488;left:182"><nobr>Por fim, faz-se a conexão entre os dois agentes caracterizando a construção de</nobr></div>
+<div style="position:absolute;top:18519;left:128"><nobr>um canal de comunicação entre o nó emissor e o nó receptor. O código abaixo ilustra</nobr></div>
+<div style="position:absolute;top:18550;left:128"><nobr>exatamente essa conexão:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:18611;left:128"><nobr>$ns connect $udp0 $null0</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:18663;left:182"><nobr>A classe Agent/UDP possui uma variedade de parâmetros que podem ser</nobr></div>
+<div style="position:absolute;top:18694;left:128"><nobr>configurados, que variam desde o tamanho do pacote até o tipo de classe a qual ele</nobr></div>
+<div style="position:absolute;top:18725;left:128"><nobr>pertence. A seguir mostramos alguns dos principais parâmetros utilizados no NS:</nobr></div>
+<div style="position:absolute;top:18782;left:128"><nobr><b>• Tamanho do pacote:</b></nobr></div>
+<div style="position:absolute;top:18803;left:182"><nobr>Esse parâmetro configura o tamanho do pacote.</nobr></div>
+<div style="position:absolute;top:18865;left:128"><nobr><i>Sintaxe:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:18895;left:128"><nobr>$udp0 set packetSize_ &lt;pktsize&gt;</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:18947;left:182"><nobr>Onde &lt;pktsize&gt; é um número inteiro que representa o tamanho em bytes do</nobr></div>
+<div style="position:absolute;top:18978;left:128"><nobr>pacote. O valor padrão é 1000. </nobr></div>
+</span></font>
+
+<div style="position:absolute;top:19120;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="16"><b>Page 16</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:20312;left:438"><nobr>16</nobr></div>
+<div style="position:absolute;top:19261;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:19292;left:128"><nobr>$udp0 set packetSize_ 500</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:19369;left:128"><nobr><b>• Identificador do fluxo de pacotes:</b></nobr></div>
+<div style="position:absolute;top:19390;left:182"><nobr>Serve para identificar o fluxo de pacotes que é originado de um agente UDP.</nobr></div>
+<div style="position:absolute;top:19452;left:128"><nobr><i>Sintaxe:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:19482;left:128"><nobr>$udp0 set fid_ &lt;fid-value&gt;</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:19534;left:182"><nobr>Onde &lt;fid-value&gt; denota o valor que será o identificador do fluxo de pacotes. O</nobr></div>
+<div style="position:absolute;top:19565;left:128"><nobr>valor padrão é 0.</nobr></div>
+<div style="position:absolute;top:19627;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:19657;left:128"><nobr>$udp0 set fid_ 1</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:19734;left:128"><nobr><b>• Tempo de vida do pacote:</b></nobr></div>
+<div style="position:absolute;top:19755;left:182"><nobr>Define o número máximo de nós por onde o pacote pode passar antes de ser</nobr></div>
+<div style="position:absolute;top:19786;left:128"><nobr>descartado.</nobr></div>
+<div style="position:absolute;top:19848;left:128"><nobr><i>Sintaxe:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:19879;left:128"><nobr>$udp0 set ttl_ &lt;time-to-live&gt;</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:19930;left:182"><nobr>Onde &lt;time-to-live&gt; é um inteiro que representa o valor do campo TTL. O valor</nobr></div>
+<div style="position:absolute;top:19962;left:128"><nobr>padrão é 32.</nobr></div>
+<div style="position:absolute;top:20024;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:20054;left:128"><nobr>$udp0 set ttl_ 64</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:20131;left:128"><nobr><b>2.3.2 TCP</b></nobr></div>
+<div style="position:absolute;top:20152;left:182"><nobr>O protocolo TCP foi projetado para oferecer um fluxo de bytes fim-a-fim</nobr></div>
+<div style="position:absolute;top:20183;left:128"><nobr>confiável. O TCP realiza controle de fluxo e congestionamento, retransmissão, entre</nobr></div>
+<div style="position:absolute;top:20214;left:128"><nobr>outras funções. Ele ainda garante que os dados chegarão de forma correta e ordenada ao</nobr></div>
+<div style="position:absolute;top:20245;left:128"><nobr>seu destino. </nobr></div>
+</span></font>
+
+<div style="position:absolute;top:20383;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="17"><b>Page 17</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:21575;left:438"><nobr>17</nobr></div>
+<div style="position:absolute;top:20493;left:182"><nobr>Para criar um agente TCP, usa-se a seguinte sintaxe:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:20555;left:128"><nobr>set tcp0 [new Agent/TCP]</nobr></div>
+<div style="position:absolute;top:20580;left:128"><nobr>$ns attach-agent $n0 $tcp0</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:20632;left:182"><nobr>A primeira linha cria um agente TCP referenciado pela variável 'tcp0'. A linha</nobr></div>
+<div style="position:absolute;top:20663;left:128"><nobr>seguinte associa o agente criado a um nó chamado 'n0', que será o nó emissor de</nobr></div>
+<div style="position:absolute;top:20694;left:128"><nobr>pacotes. Em seguida, é necessário configurar um receptor. Para o protocolo TCP o</nobr></div>
+<div style="position:absolute;top:20725;left:128"><nobr>receptor é um agente do tipo TCPSink e o exemplo abaixo mostra como criá-lo:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:20787;left:128"><nobr>set sink0 [new Agent/TCPSink]</nobr></div>
+<div style="position:absolute;top:20812;left:128"><nobr>$ns attach-agent $n1 $sink0</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:20864;left:182"><nobr>Um agente do tipo TCPSink, que é responsável por enviar um ACK para cada</nobr></div>
+<div style="position:absolute;top:20895;left:128"><nobr>pacote recebido ao emissor do tráfego TCP, servirá de destino para os pacotes e é</nobr></div>
+<div style="position:absolute;top:20926;left:128"><nobr>associado ao nó 'n1'.</nobr></div>
+<div style="position:absolute;top:20988;left:182"><nobr>Assim como no UDP, também é necessária a conexão entre os dois agentes</nobr></div>
+<div style="position:absolute;top:21019;left:128"><nobr>(TCP e TCPSink), conforme exemplificada abaixo:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:21080;left:128"><nobr>$ns connect $tcp0 $sink0</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:21132;left:182"><nobr>A seguir serão abordados alguns dos principais parâmetros de configuração que</nobr></div>
+<div style="position:absolute;top:21163;left:128"><nobr>compõem a classe Agent/TCP:</nobr></div>
+<div style="position:absolute;top:21225;left:128"><nobr><b>• Tamanho da janela:</b></nobr></div>
+<div style="position:absolute;top:21246;left:182"><nobr>Define o tamanho máximo da janela da conexão TCP.</nobr></div>
+<div style="position:absolute;top:21308;left:128"><nobr><i>Sintaxe:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:21338;left:128"><nobr>$tcp0 set window_ &lt;size&gt;</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:21390;left:182"><nobr>Onde &lt;size&gt; define o tamanho da janela em número de pacotes. O valor padrão</nobr></div>
+<div style="position:absolute;top:21421;left:128"><nobr>é 20.</nobr></div>
+<div style="position:absolute;top:21483;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:21514;left:128"><nobr>$tcp0 set window_ 50</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:21646;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="18"><b>Page 18</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:22838;left:438"><nobr>18</nobr></div>
+<div style="position:absolute;top:21782;left:128"><nobr><b>• Tamanho do pacote:</b></nobr></div>
+<div style="position:absolute;top:21803;left:182"><nobr>Esse parâmetro configura o tamanho que o pacote vai possuir.</nobr></div>
+<div style="position:absolute;top:21865;left:128"><nobr><i>Sintaxe:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:21895;left:128"><nobr>$tcp0 set packetSize_ &lt;pktsize&gt;</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:21947;left:182"><nobr>Onde &lt;pktsize&gt; é um número inteiro que representa o tamanho em bytes do</nobr></div>
+<div style="position:absolute;top:21978;left:128"><nobr>pacote. O valor padrão é 1000.</nobr></div>
+<div style="position:absolute;top:22040;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:22070;left:128"><nobr>$tcp0 set packetSize_ 500</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:22122;left:128"><nobr><b>• Tamanho da janela de congestionamento:</b></nobr></div>
+<div style="position:absolute;top:22143;left:182"><nobr>Define o tamanho máximo da janela de congestionamento da conexão TCP.</nobr></div>
+<div style="position:absolute;top:22205;left:128"><nobr><i>Sintaxe:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:22235;left:128"><nobr>$tcp0 set cwnd_ &lt;size&gt;</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:22287;left:182"><nobr>Onde &lt;size&gt; define o tamanho máximo da janela de congestionamento em</nobr></div>
+<div style="position:absolute;top:22318;left:128"><nobr>número de pacotes. O valor padrão é 0.</nobr></div>
+<div style="position:absolute;top:22380;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:22410;left:128"><nobr>$tcp set cwnd_ 10</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:22467;left:128"><nobr><b>• Tamanho inicial da janela de congestionamento:</b></nobr></div>
+<div style="position:absolute;top:22488;left:182"><nobr>Define o tamanho inicial da janela de congestionamento da conexão TCP.</nobr></div>
+<div style="position:absolute;top:22550;left:128"><nobr><i>Sintaxe:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:22581;left:128"><nobr>$tcp0 set windowInit_ &lt;size&gt;</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:22633;left:182"><nobr>Onde &lt;size&gt; define o tamanho inicial da janela de congestionamento em número</nobr></div>
+<div style="position:absolute;top:22663;left:128"><nobr>de pacotes. O valor padrão é 1.</nobr></div>
+<div style="position:absolute;top:22695;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:22725;left:128"><nobr>$tcp0 set windowInit_ 5</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:22909;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="19"><b>Page 19</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:24101;left:438"><nobr>19</nobr></div>
+<div style="position:absolute;top:23019;left:128"><nobr><b>• Tamanho máximo de rajada:</b></nobr></div>
+<div style="position:absolute;top:23040;left:182"><nobr>Determina o número máximo de pacotes que o emissor pode enviar em resposta</nobr></div>
+<div style="position:absolute;top:23071;left:128"><nobr>a um ACK.</nobr></div>
+<div style="position:absolute;top:23133;left:128"><nobr><i>Sintaxe:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:23164;left:128"><nobr>$tcp0 set maxburst_ &lt;size&gt;</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:23215;left:182"><nobr>Onde &lt;size&gt; define o número máximo de pacotes que um emissor pode enviar</nobr></div>
+<div style="position:absolute;top:23246;left:128"><nobr>em resposta a um ACK. O valor padrão é 0.</nobr></div>
+<div style="position:absolute;top:23277;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:23308;left:128"><nobr>$tcp0 set maxburst_ 50</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:23360;left:128"><nobr><b>2.3.2.1. Variações do TCP</b></nobr></div>
+<div style="position:absolute;top:23380;left:182"><nobr>O NS permite a simulação de diversas variações do protocolo TCP. A seguir,</nobr></div>
+<div style="position:absolute;top:23411;left:128"><nobr>serão abordadas 3 das principais variações.</nobr></div>
+<div style="position:absolute;top:23473;left:128"><nobr><b>• TCP Tahoe:</b></nobr></div>
+<div style="position:absolute;top:23494;left:182"><nobr>Essa versão do TCP tem como característica trabalhar com a técnica de partida</nobr></div>
+<div style="position:absolute;top:23525;left:128"><nobr>lenta, ou seja, quando há uma perda, ele começa a retransmitir a uma taxa inicial lenta e</nobr></div>
+<div style="position:absolute;top:23556;left:128"><nobr>vai crescendo exponencialmente. Essa é a variação padrão adotada pelo Agente TCP do</nobr></div>
+<div style="position:absolute;top:23587;left:128"><nobr>NS e trabalha de forma similar à versão de TCP lançada com o sistema BSD4.3. A</nobr></div>
+<div style="position:absolute;top:23618;left:128"><nobr>sintaxe utilizada para declarar essa variação é <i>Agent/TCP</i>.</nobr></div>
+<div style="position:absolute;top:23680;left:128"><nobr><b>• TCP Reno:</b></nobr></div>
+<div style="position:absolute;top:23701;left:182"><nobr>O agente TCP Reno é muito similar ao agente TCP Tahoe, exceto pelo fato de</nobr></div>
+<div style="position:absolute;top:23732;left:128"><nobr>incluir uma recuperação rápida, onde a janela de congestionamento corrente é “inflada”</nobr></div>
+<div style="position:absolute;top:23763;left:128"><nobr>pelo número de ACKs duplicados que o emissor TCP recebeu antes de receber um novo</nobr></div>
+<div style="position:absolute;top:23794;left:128"><nobr>ACK. Esse “novo ACK” se refere a qualquer ACK com valor superior ao maior já visto</nobr></div>
+<div style="position:absolute;top:23825;left:128"><nobr>até o momento. Além do mais, o agente TCP Reno não retorna ao estado de partida</nobr></div>
+<div style="position:absolute;top:23856;left:128"><nobr>lenta durante uma retransmissão rápida. Ao invés disso, ele reduz a sua janela de</nobr></div>
+<div style="position:absolute;top:23887;left:128"><nobr>congestionamento à metade da janela atual.</nobr></div>
+<div style="position:absolute;top:23919;left:182"><nobr>A sintaxe utilizada para declarar essa variação é <i>Agent/TCP/Reno</i>.</nobr></div>
+<div style="position:absolute;top:23975;left:128"><nobr><b>• TCP Vegas:</b></nobr></div>
+<div style="position:absolute;top:23996;left:182"><nobr>O TCP Vegas é uma proposta que surgiu para melhorar o desempenho das</nobr></div>
+<div style="position:absolute;top:24027;left:128"><nobr>transmissões, aumentando a vazão do enlace em até 70% em alguns casos, além de </nobr></div>
+</span></font>
+
+<div style="position:absolute;top:24172;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="20"><b>Page 20</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:25364;left:438"><nobr>20</nobr></div>
+<div style="position:absolute;top:24282;left:128"><nobr>poder reduzir até à metade a quantidade de perdas se comparado ao TCP Reno. Ele tenta</nobr></div>
+<div style="position:absolute;top:24313;left:128"><nobr>conseguir isso alterando o funcionamento de 3 mecanismos básicos: retransmissão,</nobr></div>
+<div style="position:absolute;top:24345;left:128"><nobr>controle de congestionamento e partida lenta.</nobr></div>
+<div style="position:absolute;top:24376;left:182"><nobr>A sintaxe utilizada para declarar essa variação é <i>Agent/TCP/Vegas</i>.</nobr></div>
+<div style="position:absolute;top:24438;left:128"><nobr><b>2.4. CAMADA DE APLICAÇÃO</b></nobr></div>
+<div style="position:absolute;top:24458;left:182"><nobr>O NS possui diversas classes que simulam protocolos da camada de aplicação</nobr></div>
+<div style="position:absolute;top:24489;left:128"><nobr>responsáveis por gerar esse tráfego. A seguir serão abordados os principais protocolos</nobr></div>
+<div style="position:absolute;top:24520;left:128"><nobr>disponíveis no NS, de acordo com o protocolo de transporte utilizado (UDP ou TCP):</nobr></div>
+<div style="position:absolute;top:24583;left:128"><nobr><b>2.4.1. CBR (Constant Bit Rate)</b></nobr></div>
+<div style="position:absolute;top:24603;left:182"><nobr>O serviço CBR é aplicado a conexões que necessitam de banda fixa (estática)</nobr></div>
+<div style="position:absolute;top:24634;left:128"><nobr>devido aos requisitos de tempo bastante limitados entre a origem e o destino. Aplicações</nobr></div>
+<div style="position:absolute;top:24665;left:128"><nobr>típicas deste serviço são: áudio interativo (telefonia), distribuição de áudio e vídeo,</nobr></div>
+<div style="position:absolute;top:24696;left:128"><nobr>áudio e vídeo on demand, e jogos interativos.</nobr></div>
+<div style="position:absolute;top:24727;left:182"><nobr>Para criar uma aplicação CBR, usa-se a seguinte sintaxe:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:24789;left:128"><nobr>set cbr0 [new Application/Traffic/CBR]</nobr></div>
+<div style="position:absolute;top:24814;left:128"><nobr>$cbr0 attach-agent $udp0</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:24866;left:182"><nobr>A primeira linha é responsável por gerar um tráfego CBR referenciado pela</nobr></div>
+<div style="position:absolute;top:24897;left:128"><nobr>variável ‘cbr0’. A linha seguinte associa a aplicação criada a um protocolo da camada</nobr></div>
+<div style="position:absolute;top:24928;left:128"><nobr>de transporte, que geralmente é o UDP, chamado de ‘udp0’.</nobr></div>
+<div style="position:absolute;top:24959;left:182"><nobr>A classe <i>Application/Traffic/CBR </i>possui uma variedade de parâmetros que</nobr></div>
+<div style="position:absolute;top:24990;left:128"><nobr>podem ser configurados, conforme mostrados abaixo:</nobr></div>
+<div style="position:absolute;top:25052;left:128"><nobr><b>• Taxa de envio:</b></nobr></div>
+<div style="position:absolute;top:25073;left:182"><nobr>Esse parâmetro configura a taxa de envio dos pacotes.</nobr></div>
+<div style="position:absolute;top:25135;left:128"><nobr><i>Sintaxe:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:25166;left:128"><nobr>$cbr0 set rate_ &lt;value&gt;</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:25217;left:182"><nobr>Onde &lt;value&gt; corresponde à taxa de transferência dos pacotes (em bits/s). O</nobr></div>
+<div style="position:absolute;top:25248;left:128"><nobr>valor padrão é 448Kb.</nobr></div>
+<div style="position:absolute;top:25310;left:128"><nobr><i>Exemplo: </i></nobr></div>
+</span></font>
+
+<div style="position:absolute;top:25435;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="21"><b>Page 21</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:26627;left:438"><nobr>21</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:25545;left:128"><nobr>$cbr0 set rate_ 64Kb</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:25596;left:128"><nobr><b>• Intervalo entre pacotes:</b></nobr></div>
+<div style="position:absolute;top:25617;left:182"><nobr>Esse parâmetro configura o intervalo de envio entre os pacotes e não deve ser</nobr></div>
+<div style="position:absolute;top:25648;left:128"><nobr>usado em conjunto com a taxa de envio (rate_).</nobr></div>
+<div style="position:absolute;top:25710;left:128"><nobr><i>Sintaxe:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:25741;left:128"><nobr>$cbr0 set interval_ &lt;value&gt;</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:25792;left:182"><nobr>Onde &lt;value&gt; corresponde ao tempo do intervalo entre os pacotes (em</nobr></div>
+<div style="position:absolute;top:25823;left:128"><nobr>segundos).</nobr></div>
+<div style="position:absolute;top:25885;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:25916;left:128"><nobr>$cbr0 set interval_ 0.005</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:25967;left:128"><nobr><b>• Tamanho do pacote:</b></nobr></div>
+<div style="position:absolute;top:25988;left:182"><nobr>Esse parâmetro configura o tamanho que o pacote vai possuir.</nobr></div>
+<div style="position:absolute;top:26050;left:128"><nobr><i>Sintaxe:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:26081;left:128"><nobr>$cbr0 set packetSize_ &lt;pktsize&gt;</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:26132;left:182"><nobr>Onde &lt;pktsize&gt; é um número inteiro que representa o tamanho em bytes do</nobr></div>
+<div style="position:absolute;top:26163;left:128"><nobr>pacote. O valor padrão é 210.</nobr></div>
+<div style="position:absolute;top:26226;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:26256;left:128"><nobr>$cbr0 set packetSize_ 48</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:26308;left:128"><nobr><b>2.4.2. Exponencial</b></nobr></div>
+<div style="position:absolute;top:26328;left:182"><nobr>O serviço Exponencial gera tráfegos em períodos pré-determinados, chamados</nobr></div>
+<div style="position:absolute;top:26359;left:128"><nobr>de “ligado” e “desligado”. No período “ligado”, os pacotes são gerados a uma taxa</nobr></div>
+<div style="position:absolute;top:26390;left:128"><nobr>constante, enquanto que no “desligado” não é gerado tráfego.</nobr></div>
+<div style="position:absolute;top:26421;left:182"><nobr>Para criar uma aplicação Exponencial, utiliza-se a seguinte sintaxe:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:26483;left:128"><nobr>set exponencial0 [new Application/Traffic/Exponential]</nobr></div>
+<div style="position:absolute;top:26508;left:128"><nobr>$exponencial0 attach-agent $udp0</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:26698;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="22"><b>Page 22</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:27890;left:438"><nobr>22</nobr></div>
+<div style="position:absolute;top:26808;left:182"><nobr>A primeira linha é responsável por gerar um tráfego Exponencial referenciado</nobr></div>
+<div style="position:absolute;top:26839;left:128"><nobr>pela variável ‘exponencial0’. A linha seguinte associa a aplicação criada a um protocolo</nobr></div>
+<div style="position:absolute;top:26871;left:128"><nobr>da camada de transporte, que nesse caso é o UDP, chamado de ‘udp0’.</nobr></div>
+<div style="position:absolute;top:26902;left:182"><nobr>A classe Application/Traffic/Exponential possui uma variedade de parâmetros</nobr></div>
+<div style="position:absolute;top:26933;left:128"><nobr>que podem ser configurados, conforme mostrados abaixo:</nobr></div>
+<div style="position:absolute;top:26994;left:128"><nobr><b>• Taxa de envio:</b></nobr></div>
+<div style="position:absolute;top:27015;left:182"><nobr>Esse parâmetro configura a taxa de envio dos pacotes.</nobr></div>
+<div style="position:absolute;top:27078;left:128"><nobr><i>Sintaxe:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:27108;left:128"><nobr>$exponencial0 set rate_ &lt;value&gt;</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:27160;left:182"><nobr>Onde &lt;value&gt; corresponde à taxa de transferência dos pacotes (em bits/s). O</nobr></div>
+<div style="position:absolute;top:27191;left:128"><nobr>valor padrão é 64Kb.</nobr></div>
+<div style="position:absolute;top:27253;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:27283;left:128"><nobr>$exponencial0 set rate_ 128Kb</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:27335;left:128"><nobr><b>• Tamanho do pacote:</b></nobr></div>
+<div style="position:absolute;top:27355;left:182"><nobr>Esse parâmetro configura o tamanho que o pacote vai possuir.</nobr></div>
+<div style="position:absolute;top:27418;left:128"><nobr><i>Sintaxe:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:27448;left:128"><nobr>$exponencial0 set packetSize_ &lt;pktsize&gt;</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:27500;left:182"><nobr>Onde &lt;pktsize&gt; é um número inteiro que representa o tamanho em bytes do</nobr></div>
+<div style="position:absolute;top:27531;left:128"><nobr>pacote. O valor padrão é 210.</nobr></div>
+<div style="position:absolute;top:27593;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:27623;left:128"><nobr>$exponencial0 set packetSize_ 500</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:27675;left:128"><nobr><b>• Tempo de transmissão:</b></nobr></div>
+<div style="position:absolute;top:27696;left:182"><nobr>Esse parâmetro configura a média de tempo em que o gerador de tráfego</nobr></div>
+<div style="position:absolute;top:27727;left:128"><nobr>permanece no período “ligado”.</nobr></div>
+<div style="position:absolute;top:27789;left:128"><nobr><i>Sintaxe:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:27819;left:128"><nobr>$exponencial0 set burst_time_ &lt;value&gt;</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:27961;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="23"><b>Page 23</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:29153;left:438"><nobr>23</nobr></div>
+<div style="position:absolute;top:28097;left:182"><nobr>Onde &lt;value&gt; corresponde ao tempo de geração de tráfego (em segundos). O</nobr></div>
+<div style="position:absolute;top:28128;left:128"><nobr>valor padrão é 0,5s.</nobr></div>
+<div style="position:absolute;top:28190;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:28220;left:128"><nobr>$exponencial0 set burst_time_ 0.5</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:28272;left:128"><nobr><b>• Tempo de inatividade:</b></nobr></div>
+<div style="position:absolute;top:28293;left:182"><nobr>Esse parâmetro configura a média de tempo em que o gerador de tráfego</nobr></div>
+<div style="position:absolute;top:28324;left:128"><nobr>permanece no período “desligado”.</nobr></div>
+<div style="position:absolute;top:28386;left:128"><nobr><i>Sintaxe:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:28416;left:128"><nobr>$exponencial0 set idle_time_ &lt;value&gt;</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:28468;left:182"><nobr>Onde &lt;value&gt; corresponde ao tempo sem geração de tráfego (em segundos). O</nobr></div>
+<div style="position:absolute;top:28499;left:128"><nobr>valor padrão é 0,5s.</nobr></div>
+<div style="position:absolute;top:28561;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:28592;left:128"><nobr>$exponencial0 set idle_time_ 0.5</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:28669;left:128"><nobr><b>2.4.3. FTP (File Transfer Protocol)</b></nobr></div>
+<div style="position:absolute;top:28689;left:182"><nobr>O serviço FTP é aplicado a transferência confiável de arquivos, uma vez que</nobr></div>
+<div style="position:absolute;top:28720;left:128"><nobr>requer garantias de entrega dos pacotes. Para criar uma aplicação FTP, usa-se a seguinte</nobr></div>
+<div style="position:absolute;top:28752;left:128"><nobr>sintaxe:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:28813;left:128"><nobr>set ftp0 [new Application/ FTP]</nobr></div>
+<div style="position:absolute;top:28838;left:128"><nobr>$ftp0 attach-agent $tcp0</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:28890;left:182"><nobr>A primeira linha é responsável por gerar um tráfego FTP referenciado pela</nobr></div>
+<div style="position:absolute;top:28921;left:128"><nobr>variável ‘ftp0’. A linha seguinte associa a aplicação criada a um protocolo da camada de</nobr></div>
+<div style="position:absolute;top:28952;left:128"><nobr>transporte, que é o TCP, chamado de ‘tcp0’.</nobr></div>
+<div style="position:absolute;top:28983;left:182"><nobr>Dentre os parâmetros que podem ser configurados na classe <i>Application/FTP</i>,</nobr></div>
+<div style="position:absolute;top:29014;left:128"><nobr>pode-se destacar: </nobr></div>
+</span></font>
+
+<div style="position:absolute;top:29224;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="24"><b>Page 24</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:30416;left:438"><nobr>24</nobr></div>
+<div style="position:absolute;top:29334;left:128"><nobr><b>• Número máximo de pacotes:</b></nobr></div>
+<div style="position:absolute;top:29355;left:182"><nobr>Esse parâmetro define o número máximo de pacotes gerados pela fonte</nobr></div>
+<div style="position:absolute;top:29386;left:128"><nobr>(emissor).</nobr></div>
+<div style="position:absolute;top:29448;left:128"><nobr><i>Sintaxe:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:29479;left:128"><nobr>$ftp0 set maxpkts &lt;value&gt;</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:29530;left:182"><nobr>Onde &lt;value&gt; corresponde à quantidade de pacotes.</nobr></div>
+<div style="position:absolute;top:29592;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:29623;left:128"><nobr>$ftp0 set maxpkts 1000</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:29675;left:128"><nobr><b>2.4.4. Telnet</b></nobr></div>
+<div style="position:absolute;top:29695;left:182"><nobr>O serviço Telnet é utilizado para acesso remoto e exige uma transferência</nobr></div>
+<div style="position:absolute;top:29726;left:128"><nobr>confiável de dados. Para criar uma aplicação Telnet, utiliza-se a seguinte sintaxe:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:29788;left:128"><nobr>set telnet0 [new Application/Telnet]</nobr></div>
+<div style="position:absolute;top:29813;left:128"><nobr>$telnet0 attach-agent $tcp0</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:29865;left:182"><nobr>A primeira linha é responsável por gerar um tráfego Telnet referenciado pela</nobr></div>
+<div style="position:absolute;top:29896;left:128"><nobr>variável ‘telnet0’. A linha seguinte associa a aplicação criada a um protocolo da camada</nobr></div>
+<div style="position:absolute;top:29927;left:128"><nobr>de transporte, que nesse caso é o TCP, chamado de ‘tcp0’. A classe <i>Application/Telnet</i></nobr></div>
+<div style="position:absolute;top:29958;left:128"><nobr>possui apenas um parâmetro que pode ser configurado, conforme mostrado abaixo:</nobr></div>
+<div style="position:absolute;top:30020;left:128"><nobr><b>• Intervalo entre pacotes:</b></nobr></div>
+<div style="position:absolute;top:30041;left:182"><nobr>Esse parâmetro configura o tempo médio entre chegadas de pacotes.</nobr></div>
+<div style="position:absolute;top:30103;left:128"><nobr><i>Sintaxe:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:30133;left:128"><nobr>$telnet0 set interval_ &lt;value&gt;</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:30185;left:182"><nobr>Onde &lt;value&gt; corresponde ao intervalo entre os pacotes (em segundos). O valor</nobr></div>
+<div style="position:absolute;top:30216;left:128"><nobr>padrão é 1,0s.</nobr></div>
+<div style="position:absolute;top:30278;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:30308;left:128"><nobr>$telnet0 set interval_ 0.005</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:30487;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="25"><b>Page 25</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:31679;left:438"><nobr>25</nobr></div>
+<div style="position:absolute;top:30598;left:128"><nobr><b>2.4.5. Gerando e finalizando tráfegos</b></nobr></div>
+<div style="position:absolute;top:30618;left:182"><nobr>Para iniciar e parar os tráfegos das aplicações, utiliza-se os comandos abaixo:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:30684;left:128"><nobr>$ns at &lt;tempo&gt; “$&lt;protocolo&gt; start” - <font style="font-size:16px" face="Times">Inicia o tráfego no instante denotado por</font></nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:30712;left:128"><nobr>&lt;tempo&gt;.</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:30777;left:128"><nobr>$ns at &lt;tempo&gt; “$&lt;protocolo&gt; stop” - <font style="font-size:16px" face="Times">Encerra o tráfego no instante denotado</font></nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:30806;left:128"><nobr>por &lt;tempo&gt;.</nobr></div>
+<div style="position:absolute;top:30868;left:182"><nobr>Onde &lt;protocolo&gt; representa a variável que referencia um protocolo de</nobr></div>
+<div style="position:absolute;top:30899;left:128"><nobr>aplicação criado anteriormente e &lt;tempo&gt; refere-se a um determinado tempo de</nobr></div>
+<div style="position:absolute;top:30930;left:128"><nobr>simulação em segundos.</nobr></div>
+<div style="position:absolute;top:30992;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:31022;left:128"><nobr>$ns at 0.5 "$cbr0 start"</nobr></div>
+<div style="position:absolute;top:31048;left:128"><nobr>$ns at 4.5 "$cbr0 stop"</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:31125;left:128"><nobr><b>2.5. REDES SEM FIO</b></nobr></div>
+<div style="position:absolute;top:31146;left:182"><nobr>O NS permite simulação de redes sem fios sendo possível configurar diversos</nobr></div>
+<div style="position:absolute;top:31177;left:128"><nobr>parâmetros, como tipo de antena, propagação, protocolo de roteamento, entre outros.</nobr></div>
+<div style="position:absolute;top:31239;left:128"><nobr><b>2.5.1. Redes Ad-hoc</b></nobr></div>
+<div style="position:absolute;top:31260;left:182"><nobr>As redes Ad-Hoc não possuem um controle centralizado, com pontos de acesso,</nobr></div>
+<div style="position:absolute;top:31290;left:128"><nobr>e são formadas quando existe uma necessidade de comunicação entre nós próximos. A</nobr></div>
+<div style="position:absolute;top:31322;left:128"><nobr>seguir será mostrado como configurar parâmetros e funções necessárias à simulação</nobr></div>
+<div style="position:absolute;top:31353;left:128"><nobr>desse tipo de rede.</nobr></div>
+<div style="position:absolute;top:31384;left:182"><nobr>Um nó móvel é constituído de diversos componentes de rede, como tipo de</nobr></div>
+<div style="position:absolute;top:31415;left:128"><nobr>camada de enlace, tipo de fila, subcamada MAC, o canal sem fio, antena, tipo de rádio-</nobr></div>
+<div style="position:absolute;top:31446;left:128"><nobr>propagação, protocolo de roteamento Ad-Hoc, etc. A primeira etapa é a definição desses</nobr></div>
+<div style="position:absolute;top:31477;left:128"><nobr>parâmetros, que é exemplificada a seguir:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:31538;left:128"><nobr>set val(chan) Channel/WirelessChannel</nobr></div>
+<div style="position:absolute;top:31564;left:128"><nobr>set val(prop) Propagation/TwoRayGround</nobr></div>
+<div style="position:absolute;top:31589;left:128"><nobr>set val(netif) Phy/WirelessPhy</nobr></div>
+<div style="position:absolute;top:31615;left:128"><nobr>set val(mac) Mac/802_11</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:31750;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="26"><b>Page 26</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:32942;left:438"><nobr>26</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:31860;left:128"><nobr>set val(ifq) Queue/DropTail/PriQueue</nobr></div>
+<div style="position:absolute;top:31885;left:128"><nobr>set val(ll) LL</nobr></div>
+<div style="position:absolute;top:31911;left:128"><nobr>set val(ant) Antenna/OmniAntenna</nobr></div>
+<div style="position:absolute;top:31936;left:128"><nobr>set val(ifqlen) 100</nobr></div>
+<div style="position:absolute;top:31962;left:128"><nobr>set val(nn) 3</nobr></div>
+<div style="position:absolute;top:31987;left:128"><nobr>set val(rp) AODV</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:32039;left:182"><nobr>Uma descrição desses parâmetros é explicada abaixo:</nobr></div>
+<div style="position:absolute;top:32101;left:128"><nobr><b>• Tipo de Canal:</b></nobr></div>
+<div style="position:absolute;top:32122;left:182"><nobr>Define o meio físico que vai ser utilizado. Para redes sem fio utiliza-se</nobr></div>
+<div style="position:absolute;top:32153;left:128"><nobr><i>Channel/WirelessChannel</i>.</nobr></div>
+<div style="position:absolute;top:32215;left:128"><nobr><b>• Modelo de Rádio-Propagação:</b></nobr></div>
+<div style="position:absolute;top:32236;left:182"><nobr>Pode assumir os tipos: <i>FreeSpace </i>e <i>TwoRayGround</i>. O modelo <i>FreeSpace </i>é</nobr></div>
+<div style="position:absolute;top:32267;left:128"><nobr>adequado para distâncias curtas enquanto que o modelo <i>TwoRayGround </i>geralmente é</nobr></div>
+<div style="position:absolute;top:32298;left:128"><nobr>usado para distâncias longas.</nobr></div>
+<div style="position:absolute;top:32360;left:128"><nobr><b>• Interface de Rede:</b></nobr></div>
+<div style="position:absolute;top:32381;left:182"><nobr>Atua como uma interface de hardware através da qual o nó móvel acessa o canal</nobr></div>
+<div style="position:absolute;top:32412;left:128"><nobr>e é implementada pela classe <i>Phy/WirelessPhy</i>.</nobr></div>
+<div style="position:absolute;top:32473;left:128"><nobr><b>• Subcamada MAC:</b></nobr></div>
+<div style="position:absolute;top:32495;left:182"><nobr>Usa-se o protocolo IEEE 802.11 implementado pela classe <i>Mac/802_11</i>.</nobr></div>
+<div style="position:absolute;top:32556;left:128"><nobr><b>• Tipo de Fila:</b></nobr></div>
+<div style="position:absolute;top:32577;left:182"><nobr>Geralmente utiliza-se uma fila de prioridade (<i>Queue/Droptail/PriQueue</i>), onde</nobr></div>
+<div style="position:absolute;top:32608;left:128"><nobr>os pacotes de roteamento possuem uma prioridade maior. No exemplo acima, define-se</nobr></div>
+<div style="position:absolute;top:32640;left:128"><nobr>o tamanho máximo da fila em 100 pacotes.</nobr></div>
+<div style="position:absolute;top:32701;left:128"><nobr><b>• Camada de Enlace:</b></nobr></div>
+<div style="position:absolute;top:32722;left:182"><nobr>Usa-se o valor padrão <i>LL</i>.</nobr></div>
+<div style="position:absolute;top:32784;left:128"><nobr><b>• Antena:</b></nobr></div>
+<div style="position:absolute;top:32805;left:182"><nobr>Uma antena omni-direcional (<i>Antenna/OmniAntenna</i>) é usada pelos nós móveis.</nobr></div>
+<div style="position:absolute;top:32867;left:128"><nobr><b>• Número de nós móveis:</b></nobr></div>
+<div style="position:absolute;top:32888;left:182"><nobr>Neste exemplo, foi utilizado o valor três (três nós móveis). </nobr></div>
+</span></font>
+
+<div style="position:absolute;top:33013;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="27"><b>Page 27</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:34205;left:438"><nobr>27</nobr></div>
+<div style="position:absolute;top:33154;left:182"><nobr>Simulações de redes sem fio necessitam da criação de um arquivo de <i>trace</i></nobr></div>
+<div style="position:absolute;top:33186;left:128"><nobr>genérico, mostrada abaixo:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:33247;left:128"><nobr>set tf [open out.tr w]</nobr></div>
+<div style="position:absolute;top:33272;left:128"><nobr>$ns trace-all $tf</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:33330;left:182"><nobr>Neste exemplo, é criado um arquivo de <i>trace </i>denominado ‘out.tr’ referenciado</nobr></div>
+<div style="position:absolute;top:33361;left:128"><nobr>pela variável ‘tf’. O arquivo de <i>trace </i>do NAM precisa registrar os movimentos dos nós.</nobr></div>
+<div style="position:absolute;top:33392;left:128"><nobr>Para isso, usa-se o comando “<font style="font-size:12px" face="Courier">namtrace-all-wireless</font>” exemplificado abaixo:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:33454;left:128"><nobr>set nf [open out.nam w]</nobr></div>
+<div style="position:absolute;top:33479;left:128"><nobr>$ns namtrace-all-wireless $nf 500 500</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:33531;left:182"><nobr>As linhas acima definem a criação de um arquivo de <i>trace </i>do NAM chamado</nobr></div>
+<div style="position:absolute;top:33562;left:128"><nobr>‘out.nam’ referenciado pela variável ‘nf’ que conterá todas as informações de</nobr></div>
+<div style="position:absolute;top:33593;left:128"><nobr>mobilidade em uma rede que possui uma área de atuação de 500m x 500m. Em seguida,</nobr></div>
+<div style="position:absolute;top:33624;left:128"><nobr>definem-se as dimensões da área de atuação dos nós móveis (topografia), como no</nobr></div>
+<div style="position:absolute;top:33655;left:128"><nobr>exemplo abaixo:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:33717;left:128"><nobr>set topo [new Topography]</nobr></div>
+<div style="position:absolute;top:33742;left:128"><nobr>$topo load_flatgrid 500 500</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:33794;left:182"><nobr>Neste caso, foi criada uma topografia de 500m x 500m. O próximo passo é a</nobr></div>
+<div style="position:absolute;top:33825;left:128"><nobr>criação de um objeto denominado GOD (General Operations Director), mostrada a</nobr></div>
+<div style="position:absolute;top:33856;left:128"><nobr>seguir:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:33917;left:128"><nobr>create-god $val(nn)</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:33969;left:182"><nobr>Onde ‘$val(nn)’ representa o número de nós móveis que foi definido</nobr></div>
+<div style="position:absolute;top:34000;left:128"><nobr>anteriormente. O GOD é responsável por armazenar informações sobre o ambiente, a</nobr></div>
+<div style="position:absolute;top:34031;left:128"><nobr>rede, os nós. É um observador onipresente, mas que não é conhecido pelos outros</nobr></div>
+<div style="position:absolute;top:34062;left:128"><nobr>participantes da simulação. Para criar os nós móveis é necessário redefinir a maneira</nobr></div>
+<div style="position:absolute;top:34093;left:128"><nobr>como um objeto nó é construído, ou seja, ajustar a API de configuração do nó onde se </nobr></div>
+</span></font>
+
+<div style="position:absolute;top:34276;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="28"><b>Page 28</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:35468;left:438"><nobr>28</nobr></div>
+<div style="position:absolute;top:34386;left:128"><nobr>pode determinar o tipo de endereçamento, o protocolo de roteamento Ad-Hoc, camada</nobr></div>
+<div style="position:absolute;top:34417;left:128"><nobr>de enlace, camada MAC, etc. Esse processo é ilustrado a seguir:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:34479;left:128"><nobr>$ns node-config -adhocRouting $val(rp) \</nobr></div>
+<div style="position:absolute;top:34504;left:128"><nobr>-llType $val(ll) \</nobr></div>
+<div style="position:absolute;top:34530;left:128"><nobr>-macType $val(mac) \</nobr></div>
+<div style="position:absolute;top:34555;left:128"><nobr>-ifqType $val(ifq) \</nobr></div>
+<div style="position:absolute;top:34581;left:128"><nobr>-ifqLen $val(ifqlen) \</nobr></div>
+<div style="position:absolute;top:34606;left:128"><nobr>-antType $val(ant) \</nobr></div>
+<div style="position:absolute;top:34632;left:128"><nobr>-propType $val(prop) \</nobr></div>
+<div style="position:absolute;top:34657;left:128"><nobr>-phyType $val(netif) \</nobr></div>
+<div style="position:absolute;top:34683;left:128"><nobr>-topoInstance $topo \</nobr></div>
+<div style="position:absolute;top:34708;left:128"><nobr>-agentTrace ON \</nobr></div>
+<div style="position:absolute;top:34734;left:128"><nobr>-routerTrace ON \</nobr></div>
+<div style="position:absolute;top:34759;left:128"><nobr>-macTrace ON \</nobr></div>
+<div style="position:absolute;top:34785;left:128"><nobr>-movementTrace OFF \</nobr></div>
+<div style="position:absolute;top:34810;left:128"><nobr>-channel [new $val(chan)]`</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:34862;left:182"><nobr>Os valores desses parâmetros serão substituídos pelos valores das variáveis</nobr></div>
+<div style="position:absolute;top:34893;left:128"><nobr>‘$val’ e outras definidas anteriormente. Depois, criam-se os nós:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:34954;left:128"><nobr>set n(0) [$ns node]</nobr></div>
+<div style="position:absolute;top:34980;left:128"><nobr>set n(1) [$ns node]</nobr></div>
+<div style="position:absolute;top:35005;left:128"><nobr>set n(2) [$ns node]</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:35057;left:182"><nobr>Em seguida, os nós são inicializados desabilitando movimentos aleatórios nos</nobr></div>
+<div style="position:absolute;top:35088;left:128"><nobr>mesmos:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:35150;left:128"><nobr>$n(0) random-motion 0</nobr></div>
+<div style="position:absolute;top:35175;left:128"><nobr>$n(1) random-motion 0</nobr></div>
+<div style="position:absolute;top:35200;left:128"><nobr>$n(2) random-motion 0</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:35252;left:182"><nobr>As posições iniciais dos nós são determinadas a seguir e exemplificadas abaixo:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:35313;left:128"><nobr>$n(0) set X_ 200.0</nobr></div>
+<div style="position:absolute;top:35339;left:128"><nobr>$n(0) set Y_ 100.0</nobr></div>
+<div style="position:absolute;top:35364;left:128"><nobr>$n(0) set Z_ 0.0</nobr></div>
+<div style="position:absolute;top:35390;left:128"><nobr>$n(1) set X_ 100.0</nobr></div>
+<div style="position:absolute;top:35415;left:128"><nobr>$n(1) set Y_ 100.0</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:35539;left:0"><hr><table border="0" width="100%"><tbody><tr><td bgcolor="eeeeee" align="right"><font face="arial,sans-serif"><a name="29"><b>Page 29</b></a></font></td></tr></tbody></table></div><font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:36731;left:438"><nobr>29</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:35649;left:128"><nobr>$n(1) set Z_ 0.0</nobr></div>
+<div style="position:absolute;top:35674;left:128"><nobr>$n(2) set X_ 100.0</nobr></div>
+<div style="position:absolute;top:35700;left:128"><nobr>$n(2) set Y_ 10.0</nobr></div>
+<div style="position:absolute;top:35725;left:128"><nobr>$n(2) set Z_ 0.0</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:35777;left:182"><nobr>É necessário definir a posição inicial dos nós no NAM. Isso é feito de acordo</nobr></div>
+<div style="position:absolute;top:35808;left:128"><nobr>com a seguinte sintaxe:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:35869;left:128"><nobr>$ns initial_node_pos &lt;node&gt; &lt;size&gt;</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:35921;left:182"><nobr>Onde &lt;size&gt; define o tamanho do nó no NAM.</nobr></div>
+<div style="position:absolute;top:35952;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:36013;left:128"><nobr>for {set i 0} {$i &lt; $val(nn)} {incr i} {</nobr></div>
+<div style="position:absolute;top:36039;left:128"><nobr>$ns initial_node_pos $n($i) 50</nobr></div>
+<div style="position:absolute;top:36064;left:128"><nobr>}</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:36116;left:182"><nobr>Para dar mobilidade aos nós usa-se a sintaxe abaixo que é modelada como um</nobr></div>
+<div style="position:absolute;top:36147;left:128"><nobr>evento:</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:36209;left:128"><nobr>$ns at &lt;time&gt; $&lt;node&gt; setdest &lt;pos_x&gt; &lt;pos_y&gt; &lt;vel&gt;</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:36260;left:182"><nobr>Determinando que no instante &lt;time&gt; o nó &lt;node&gt; irá se mover para a posição</nobr></div>
+<div style="position:absolute;top:36291;left:128"><nobr>(&lt;pos_x&gt; &lt;pos_y) à uma velocidade de &lt;vel&gt; m/s.</nobr></div>
+<div style="position:absolute;top:36353;left:128"><nobr><i>Exemplo:</i></nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:36415;left:128"><nobr>$ns at 0.4 "$n(2) setdest 300.0 350.0 600.0"</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:36466;left:182"><nobr>É preciso indicar ao NAM o instante em que a simulação termina, utilizando a</nobr></div>
+<div style="position:absolute;top:36497;left:128"><nobr>sintaxe abaixo (na forma de evento):</nobr></div>
+</span></font>
+<font size="3" face="Courier"><span style="font-size:12px;font-family:Courier">
+<div style="position:absolute;top:36559;left:128"><nobr>$ns at &lt;time&gt; "$ns nam-end-wireless &lt;stop_time&gt;"</nobr></div>
+</span></font>
+<font size="3" face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:36616;left:182"><nobr>Onde &lt;time&gt; é um instante de tempo qualquer e &lt;stop_time&gt; é o tempo onde a</nobr></div>
+<div style="position:absolute;top:36647;left:128"><nobr>simulação vai terminar. </nobr></div>
+</span></font>
+
+
+</div></body></html>
