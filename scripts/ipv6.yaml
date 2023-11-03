@@ -1,0 +1,551 @@
+questions:
+- question:
+    answers:
+    - answer: 2001:db8:98cb:5dbb::fc66
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:98cb:5dbb:0000:0000:0000:fc66</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:98cb:5dbb::fc66]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:98cb:5dbb:0000:0000:0000:fc66'
+- question:
+    answers:
+    - answer: 2001:db8:f556:26a:0:7f0c:6c0e:0
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:f556:026a:0000:7f0c:6c0e:0000</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:f556:26a:0:7f0c:6c0e:0]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:f556:026a:0000:7f0c:6c0e:0000'
+- question:
+    answers:
+    - answer: 2001:db8::8584:7f69:8943
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:0000:8584:7f69:8943</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8::8584:7f69:8943]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:0000:0000:0000:8584:7f69:8943'
+- question:
+    answers:
+    - answer: '2001:db8:8d58:0:90c0:8989::'
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:8d58:0000:90c0:8989:0000:0000</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:8d58:0:90c0:8989::]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:8d58:0000:90c0:8989:0000:0000'
+- question:
+    answers:
+    - answer: 2001:db8:4ded:6a8f:e246::83b9
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:4ded:6a8f:e246:0000:0000:83b9</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:4ded:6a8f:e246::83b9]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:4ded:6a8f:e246:0000:0000:83b9'
+- question:
+    answers:
+    - answer: 2001:db8::e401:6d46:5761:1c86
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:e401:6d46:5761:1c86</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8::e401:6d46:5761:1c86]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:0000:0000:e401:6d46:5761:1c86'
+- question:
+    answers:
+    - answer: 2001:db8:2dbd:d613::bdf2
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:2dbd:d613:0000:0000:0000:bdf2</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:2dbd:d613::bdf2]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:2dbd:d613:0000:0000:0000:bdf2'
+- question:
+    answers:
+    - answer: 2001:db8:ba11::3b7e:0
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:ba11:0000:0000:0000:3b7e:0000</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:ba11::3b7e:0]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:ba11:0000:0000:0000:3b7e:0000'
+- question:
+    answers:
+    - answer: 2001:db8::a225:b08f:71e3:a69e
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:a225:b08f:71e3:a69e</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8::a225:b08f:71e3:a69e]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:0000:0000:a225:b08f:71e3:a69e'
+- question:
+    answers:
+    - answer: 2001:db8:2b72::9b24:dbc3:229e
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:2b72:0000:0000:9b24:dbc3:229e</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:2b72::9b24:dbc3:229e]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:2b72:0000:0000:9b24:dbc3:229e'
+- question:
+    answers:
+    - answer: 2001:db8:c661::c835:ea9d
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:c661:0000:0000:0000:c835:ea9d</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:c661::c835:ea9d]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:c661:0000:0000:0000:c835:ea9d'
+- question:
+    answers:
+    - answer: 2001:db8:7cca:401a::d91e
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:7cca:401a:0000:0000:0000:d91e</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:7cca:401a::d91e]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:7cca:401a:0000:0000:0000:d91e'
+- question:
+    answers:
+    - answer: '2001:db8:f81b:a919:2089:5e0b::'
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:f81b:a919:2089:5e0b:0000:0000</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:f81b:a919:2089:5e0b::]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:f81b:a919:2089:5e0b:0000:0000'
+- question:
+    answers:
+    - answer: 2001:db8:b2f9::135d:3c94
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:b2f9:0000:0000:0000:135d:3c94</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:b2f9::135d:3c94]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:b2f9:0000:0000:0000:135d:3c94'
+- question:
+    answers:
+    - answer: 2001:db8:40be:dba9:0:38a3:6771:0
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:40be:dba9:0000:38a3:6771:0000</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:40be:dba9:0:38a3:6771:0]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:40be:dba9:0000:38a3:6771:0000'
+- question:
+    answers:
+    - answer: 2001:db8:0:a915:83e6::4977
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:a915:83e6:0000:0000:4977</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:0:a915:83e6::4977]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:0000:a915:83e6:0000:0000:4977'
+- question:
+    answers:
+    - answer: '2001:db8:54d3:908b:4fef:2ea1::'
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:54d3:908b:4fef:2ea1:0000:0000</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:54d3:908b:4fef:2ea1::]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:54d3:908b:4fef:2ea1:0000:0000'
+- question:
+    answers:
+    - answer: '2001:db8:22da:c234:db1e:80d8::'
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:22da:c234:db1e:80d8:0000:0000</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:22da:c234:db1e:80d8::]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:22da:c234:db1e:80d8:0000:0000'
+- question:
+    answers:
+    - answer: '2001:db8:8acb:c85e:44d2::'
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:8acb:c85e:44d2:0000:0000:0000</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:8acb:c85e:44d2::]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:8acb:c85e:44d2:0000:0000:0000'
+- question:
+    answers:
+    - answer: 2001:db8:2b7d::5ff9:431:eb80
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:2b7d:0000:0000:5ff9:0431:eb80</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:2b7d::5ff9:431:eb80]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:2b7d:0000:0000:5ff9:0431:eb80'
+- question:
+    answers:
+    - answer: '2001:db8:6b45:15:35df::'
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:6b45:0015:35df:0000:0000:0000</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:6b45:15:35df::]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:6b45:0015:35df:0000:0000:0000'
+- question:
+    answers:
+    - answer: 2001:db8:36ea::a412:4573
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:36ea:0000:0000:0000:a412:4573</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:36ea::a412:4573]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:36ea:0000:0000:0000:a412:4573'
+- question:
+    answers:
+    - answer: 2001:db8::aedc:f1fb:efe:915
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:aedc:f1fb:0efe:0915</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8::aedc:f1fb:efe:915]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:0000:0000:aedc:f1fb:0efe:0915'
+- question:
+    answers:
+    - answer: 2001:db8::d404:8fb7:5a6d
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:0000:d404:8fb7:5a6d</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8::d404:8fb7:5a6d]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:0000:0000:0000:d404:8fb7:5a6d'
+- question:
+    answers:
+    - answer: 2001:db8:c90f:5d76:da86::d618
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:c90f:5d76:da86:0000:0000:d618</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:c90f:5d76:da86::d618]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:c90f:5d76:da86:0000:0000:d618'
+- question:
+    answers:
+    - answer: '2001:db8:1219:ac1f:d1e2:7f41::'
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:1219:ac1f:d1e2:7f41:0000:0000</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:1219:ac1f:d1e2:7f41::]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:1219:ac1f:d1e2:7f41:0000:0000'
+- question:
+    answers:
+    - answer: 2001:db8::add4:fbf:b011:e23e
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:add4:0fbf:b011:e23e</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8::add4:fbf:b011:e23e]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:0000:0000:add4:0fbf:b011:e23e'
+- question:
+    answers:
+    - answer: '2001:db8:3f28:0:716b::'
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:3f28:0000:716b:0000:0000:0000</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:3f28:0:716b::]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:3f28:0000:716b:0000:0000:0000'
+- question:
+    answers:
+    - answer: '2001:db8:9f34:724e:c81a:f7e6::'
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:9f34:724e:c81a:f7e6:0000:0000</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:9f34:724e:c81a:f7e6::]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:9f34:724e:c81a:f7e6:0000:0000'
+- question:
+    answers:
+    - answer: 2001:db8:1d20::135f:4200
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:1d20:0000:0000:0000:135f:4200</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:1d20::135f:4200]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:1d20:0000:0000:0000:135f:4200'
+- question:
+    answers:
+    - answer: 2001:db8:51fb:7350::52ed
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:51fb:7350:0000:0000:0000:52ed</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:51fb:7350::52ed]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:51fb:7350:0000:0000:0000:52ed'
+- question:
+    answers:
+    - answer: '2001:db8:3311:4063::'
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:3311:4063:0000:0000:0000:0000</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:3311:4063::]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:3311:4063:0000:0000:0000:0000'
+- question:
+    answers:
+    - answer: 2001:db8::1237:67a0:5174:632b
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:1237:67a0:5174:632b</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8::1237:67a0:5174:632b]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:0000:0000:1237:67a0:5174:632b'
+- question:
+    answers:
+    - answer: 2001:db8::abd6:5865:865e:b021
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:abd6:5865:865e:b021</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8::abd6:5865:865e:b021]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:0000:0000:abd6:5865:865e:b021'
+- question:
+    answers:
+    - answer: 2001:db8:e0ef::c964:1751:ad2f
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:e0ef:0000:0000:c964:1751:ad2f</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:e0ef::c964:1751:ad2f]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:e0ef:0000:0000:c964:1751:ad2f'
+- question:
+    answers:
+    - answer: '2001:db8:596b:1760:5671:e740::'
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:596b:1760:5671:e740:0000:0000</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:596b:1760:5671:e740::]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:596b:1760:5671:e740:0000:0000'
+- question:
+    answers:
+    - answer: 2001:db8::cfd9:a6b3:8c4d
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:0000:cfd9:a6b3:8c4d</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8::cfd9:a6b3:8c4d]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:0000:0000:0000:cfd9:a6b3:8c4d'
+- question:
+    answers:
+    - answer: '2001:db8:b6fb:e689:8225:8ae7::'
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:b6fb:e689:8225:8ae7:0000:0000</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:b6fb:e689:8225:8ae7::]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:b6fb:e689:8225:8ae7:0000:0000'
+- question:
+    answers:
+    - answer: 2001:db8:b56c:7b85::222a
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:b56c:7b85:0000:0000:0000:222a</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:b56c:7b85::222a]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:b56c:7b85:0000:0000:0000:222a'
+- question:
+    answers:
+    - answer: '2001:db8:e26d:4045:d741:7437::'
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:e26d:4045:d741:7437:0000:0000</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:e26d:4045:d741:7437::]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:e26d:4045:d741:7437:0000:0000'
+- question:
+    answers:
+    - answer: 2001:db8:8bfc:171a::bf35:a0a0
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:8bfc:171a:0000:0000:bf35:a0a0</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:8bfc:171a::bf35:a0a0]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:8bfc:171a:0000:0000:bf35:a0a0'
+- question:
+    answers:
+    - answer: '2001:db8:bf1e:9d8c:67d0::'
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:bf1e:9d8c:67d0:0000:0000:0000</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:bf1e:9d8c:67d0::]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:bf1e:9d8c:67d0:0000:0000:0000'
+- question:
+    answers:
+    - answer: 2001:db8:d80:66df:e747::9fa1
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:0d80:66df:e747:0000:0000:9fa1</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:d80:66df:e747::9fa1]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:0d80:66df:e747:0000:0000:9fa1'
+- question:
+    answers:
+    - answer: 2001:db8:3779:9e11:a4c6::ed49
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:3779:9e11:a4c6:0000:0000:ed49</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:3779:9e11:a4c6::ed49]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:3779:9e11:a4c6:0000:0000:ed49'
+- question:
+    answers:
+    - answer: '2001:db8:b7f9:fdd5:264a::'
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:b7f9:fdd5:264a:0000:0000:0000</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:b7f9:fdd5:264a::]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:b7f9:fdd5:264a:0000:0000:0000'
+- question:
+    answers:
+    - answer: 2001:db8::300a:74e
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:0000:0000:300a:074e</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8::300a:74e]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:0000:0000:0000:0000:300a:074e'
+- question:
+    answers:
+    - answer: 2001:db8:47ac::27fc
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:47ac:0000:0000:0000:0000:27fc</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:47ac::27fc]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:47ac:0000:0000:0000:0000:27fc'
+- question:
+    answers:
+    - answer: 2001:db8::468a:e422:0
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:0000:468a:e422:0000</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8::468a:e422:0]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:0000:0000:0000:468a:e422:0000'
+- question:
+    answers:
+    - answer: '2001:db8:9f2a:f6fa:1753:5e6a::'
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:9f2a:f6fa:1753:5e6a:0000:0000</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:9f2a:f6fa:1753:5e6a::]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:9f2a:f6fa:1753:5e6a:0000:0000'
+- question:
+    answers:
+    - answer: '2001:db8:bda5:d633:0:23d4::'
+    description: 'Considere o seguinte endereço IPv6: <strong>2001:0db8:bda5:d633:0000:23d4:0000:0000</strong>.<br><br>
+
+
+      Apresente a representação compactada desse endereço: [2001:db8:bda5:d633:0:23d4::]
+
+      '
+    feedback: ''
+    title: 'Representação de Endereços IPv6: 2001:0db8:bda5:d633:0000:23d4:0000:0000'

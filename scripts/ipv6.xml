@@ -1,0 +1,2503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:98cb:5dbb:0000:0000:0000:fc66</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:98cb:5dbb:0000:0000:0000:fc66</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:98cb:5dbb::fc66]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:98cb:5dbb::fc66</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:f556:026a:0000:7f0c:6c0e:0000</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:f556:026a:0000:7f0c:6c0e:0000</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:f556:26a:0:7f0c:6c0e:0]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:f556:26a:0:7f0c:6c0e:0</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:0000:0000:0000:8584:7f69:8943</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:0000:8584:7f69:8943</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8::8584:7f69:8943]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8::8584:7f69:8943</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:8d58:0000:90c0:8989:0000:0000</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:8d58:0000:90c0:8989:0000:0000</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:8d58:0:90c0:8989::]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:8d58:0:90c0:8989::</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:4ded:6a8f:e246:0000:0000:83b9</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:4ded:6a8f:e246:0000:0000:83b9</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:4ded:6a8f:e246::83b9]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:4ded:6a8f:e246::83b9</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:0000:0000:e401:6d46:5761:1c86</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:e401:6d46:5761:1c86</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8::e401:6d46:5761:1c86]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8::e401:6d46:5761:1c86</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:2dbd:d613:0000:0000:0000:bdf2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:2dbd:d613:0000:0000:0000:bdf2</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:2dbd:d613::bdf2]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:2dbd:d613::bdf2</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:ba11:0000:0000:0000:3b7e:0000</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:ba11:0000:0000:0000:3b7e:0000</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:ba11::3b7e:0]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:ba11::3b7e:0</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:0000:0000:a225:b08f:71e3:a69e</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:a225:b08f:71e3:a69e</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8::a225:b08f:71e3:a69e]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8::a225:b08f:71e3:a69e</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:2b72:0000:0000:9b24:dbc3:229e</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:2b72:0000:0000:9b24:dbc3:229e</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:2b72::9b24:dbc3:229e]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:2b72::9b24:dbc3:229e</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:c661:0000:0000:0000:c835:ea9d</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:c661:0000:0000:0000:c835:ea9d</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:c661::c835:ea9d]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:c661::c835:ea9d</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:7cca:401a:0000:0000:0000:d91e</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:7cca:401a:0000:0000:0000:d91e</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:7cca:401a::d91e]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:7cca:401a::d91e</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:f81b:a919:2089:5e0b:0000:0000</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:f81b:a919:2089:5e0b:0000:0000</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:f81b:a919:2089:5e0b::]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:f81b:a919:2089:5e0b::</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:b2f9:0000:0000:0000:135d:3c94</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:b2f9:0000:0000:0000:135d:3c94</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:b2f9::135d:3c94]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:b2f9::135d:3c94</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:40be:dba9:0000:38a3:6771:0000</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:40be:dba9:0000:38a3:6771:0000</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:40be:dba9:0:38a3:6771:0]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:40be:dba9:0:38a3:6771:0</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:0000:a915:83e6:0000:0000:4977</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:a915:83e6:0000:0000:4977</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:0:a915:83e6::4977]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:0:a915:83e6::4977</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:54d3:908b:4fef:2ea1:0000:0000</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:54d3:908b:4fef:2ea1:0000:0000</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:54d3:908b:4fef:2ea1::]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:54d3:908b:4fef:2ea1::</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:22da:c234:db1e:80d8:0000:0000</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:22da:c234:db1e:80d8:0000:0000</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:22da:c234:db1e:80d8::]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:22da:c234:db1e:80d8::</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:8acb:c85e:44d2:0000:0000:0000</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:8acb:c85e:44d2:0000:0000:0000</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:8acb:c85e:44d2::]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:8acb:c85e:44d2::</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:2b7d:0000:0000:5ff9:0431:eb80</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:2b7d:0000:0000:5ff9:0431:eb80</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:2b7d::5ff9:431:eb80]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:2b7d::5ff9:431:eb80</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:6b45:0015:35df:0000:0000:0000</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:6b45:0015:35df:0000:0000:0000</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:6b45:15:35df::]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:6b45:15:35df::</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:36ea:0000:0000:0000:a412:4573</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:36ea:0000:0000:0000:a412:4573</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:36ea::a412:4573]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:36ea::a412:4573</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:0000:0000:aedc:f1fb:0efe:0915</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:aedc:f1fb:0efe:0915</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8::aedc:f1fb:efe:915]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8::aedc:f1fb:efe:915</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:0000:0000:0000:d404:8fb7:5a6d</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:0000:d404:8fb7:5a6d</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8::d404:8fb7:5a6d]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8::d404:8fb7:5a6d</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:c90f:5d76:da86:0000:0000:d618</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:c90f:5d76:da86:0000:0000:d618</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:c90f:5d76:da86::d618]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:c90f:5d76:da86::d618</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:1219:ac1f:d1e2:7f41:0000:0000</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:1219:ac1f:d1e2:7f41:0000:0000</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:1219:ac1f:d1e2:7f41::]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:1219:ac1f:d1e2:7f41::</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:0000:0000:add4:0fbf:b011:e23e</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:add4:0fbf:b011:e23e</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8::add4:fbf:b011:e23e]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8::add4:fbf:b011:e23e</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:3f28:0000:716b:0000:0000:0000</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:3f28:0000:716b:0000:0000:0000</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:3f28:0:716b::]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:3f28:0:716b::</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:9f34:724e:c81a:f7e6:0000:0000</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:9f34:724e:c81a:f7e6:0000:0000</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:9f34:724e:c81a:f7e6::]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:9f34:724e:c81a:f7e6::</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:1d20:0000:0000:0000:135f:4200</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:1d20:0000:0000:0000:135f:4200</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:1d20::135f:4200]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:1d20::135f:4200</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:51fb:7350:0000:0000:0000:52ed</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:51fb:7350:0000:0000:0000:52ed</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:51fb:7350::52ed]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:51fb:7350::52ed</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:3311:4063:0000:0000:0000:0000</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:3311:4063:0000:0000:0000:0000</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:3311:4063::]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:3311:4063::</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:0000:0000:1237:67a0:5174:632b</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:1237:67a0:5174:632b</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8::1237:67a0:5174:632b]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8::1237:67a0:5174:632b</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:0000:0000:abd6:5865:865e:b021</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:abd6:5865:865e:b021</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8::abd6:5865:865e:b021]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8::abd6:5865:865e:b021</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:e0ef:0000:0000:c964:1751:ad2f</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:e0ef:0000:0000:c964:1751:ad2f</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:e0ef::c964:1751:ad2f]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:e0ef::c964:1751:ad2f</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:596b:1760:5671:e740:0000:0000</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:596b:1760:5671:e740:0000:0000</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:596b:1760:5671:e740::]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:596b:1760:5671:e740::</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:0000:0000:0000:cfd9:a6b3:8c4d</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:0000:cfd9:a6b3:8c4d</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8::cfd9:a6b3:8c4d]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8::cfd9:a6b3:8c4d</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:b6fb:e689:8225:8ae7:0000:0000</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:b6fb:e689:8225:8ae7:0000:0000</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:b6fb:e689:8225:8ae7::]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:b6fb:e689:8225:8ae7::</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:b56c:7b85:0000:0000:0000:222a</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:b56c:7b85:0000:0000:0000:222a</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:b56c:7b85::222a]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:b56c:7b85::222a</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:e26d:4045:d741:7437:0000:0000</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:e26d:4045:d741:7437:0000:0000</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:e26d:4045:d741:7437::]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:e26d:4045:d741:7437::</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:8bfc:171a:0000:0000:bf35:a0a0</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:8bfc:171a:0000:0000:bf35:a0a0</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:8bfc:171a::bf35:a0a0]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:8bfc:171a::bf35:a0a0</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:bf1e:9d8c:67d0:0000:0000:0000</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:bf1e:9d8c:67d0:0000:0000:0000</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:bf1e:9d8c:67d0::]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:bf1e:9d8c:67d0::</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:0d80:66df:e747:0000:0000:9fa1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:0d80:66df:e747:0000:0000:9fa1</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:d80:66df:e747::9fa1]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:d80:66df:e747::9fa1</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:3779:9e11:a4c6:0000:0000:ed49</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:3779:9e11:a4c6:0000:0000:ed49</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:3779:9e11:a4c6::ed49]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:3779:9e11:a4c6::ed49</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:b7f9:fdd5:264a:0000:0000:0000</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:b7f9:fdd5:264a:0000:0000:0000</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:b7f9:fdd5:264a::]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:b7f9:fdd5:264a::</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:0000:0000:0000:0000:300a:074e</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:0000:0000:300a:074e</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8::300a:74e]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8::300a:74e</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:47ac:0000:0000:0000:0000:27fc</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:47ac:0000:0000:0000:0000:27fc</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:47ac::27fc]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:47ac::27fc</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:0000:0000:0000:468a:e422:0000</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:0000:0000:0000:468a:e422:0000</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8::468a:e422:0]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8::468a:e422:0</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:9f2a:f6fa:1753:5e6a:0000:0000</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:9f2a:f6fa:1753:5e6a:0000:0000</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:9f2a:f6fa:1753:5e6a::]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:9f2a:f6fa:1753:5e6a::</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+<question type="gapfill">
+    <name>
+      <text>Representação de Endereços IPv6: 2001:0db8:bda5:d633:0000:23d4:0000:0000</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Considere o seguinte endereço IPv6: <strong>2001:0db8:bda5:d633:0000:23d4:0000:0000</strong>.<br><br>
+
+Apresente a representação compactada desse endereço: [2001:db8:bda5:d633:0:23d4::]
+]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2001:db8:bda5:d633:0:23d4::</text>
+      <feedback format="moodle_auto_format">
+        <text></text>
+      </feedback>
+    </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+</quiz>

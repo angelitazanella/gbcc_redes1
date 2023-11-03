@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<quiz>
+
+<question type="category">
+    <category>
+        <text>$course$/sample</text>
+    </category>
+</question>
+
+<question type="gapfill">
+     <name>
+         <text>$title$</text>
+     </name>
+     <questiontext format="html">
+         <text>$text$</text>
+     </questiontext>
+    <generalfeedback format="html">
+        <text>
+            <p dir="ltr" style="text-align: left;"></p><p data-sourcepos="16:1-16:383">O endereço de rede é o primeiro endereço da sub-rede, e o endereço de broadcast é o último endereço da sub-rede. O espaço de endereçamento de hosts é o conjunto de endereços IP que podem ser usados por hosts na sub-rede. A máscara de rede é um número binário que indica quantos bits do endereço IP são usados para identificar a rede e quantos bits são usados para identificar o host.</p><br><p></p>
+        </text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    <answer fraction="100" format="moodle_auto_format">
+        <text>$netaddr</text>
+        <feedback format="moodle_auto_format">
+            <text/>
+        </feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+        <text>$broadcast</text>
+        <feedback format="moodle_auto_format">
+            <text/>
+        </feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+        <text>$first_host</text>
+        <feedback format="moodle_auto_format">
+        <text/>
+        </feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+        <text>10$last_host</text>
+        <feedback format="moodle_auto_format">
+        <text/>
+        </feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+        <text>$netmask</text>
+        <feedback format="moodle_auto_format">
+        <text/>
+        </feedback>
+        </answer>
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+
+    <correctfeedback format="html">
+        <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+        <text>Sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+        <text>Sua resposta está incorreta.</text>
+    </incorrectfeedback>
+</question>
+</quiz>

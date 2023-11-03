@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+{% for q in data.questions -%}
+  <question type="gapfill">
+    <name>
+      <text>{{ q.questiontext -}}</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[{{ q.questiondescription -}}]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[{{ q.generalfeedback }}]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answerdisplay>gapfill</answerdisplay>
+    <delimitchars>[]</delimitchars>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <singleuse>0</singleuse>
+    {% for a in q.answers -%}
+    <answer fraction="100" format="moodle_auto_format">
+      <text>{{ a.text -}}</text>
+      <feedback format="moodle_auto_format">
+        <text>{{ a.feedback -}}</text>
+      </feedback>
+    </answer>
+    {% endfor -%}    
+    
+    <delimitchars>[]</delimitchars>
+    <answerdisplay>gapfill</answerdisplay>
+    <casesensitive>0</casesensitive>
+    <noduplicates>0</noduplicates>
+    <disableregex>1</disableregex>
+    <fixedgapsize>1</fixedgapsize>
+    <optionsaftertext>0</optionsaftertext>
+    <letterhints>0</letterhints>
+    <correctfeedback format="html">
+      <text>Sua resposta está correta.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Quase certo. Estude um pouco mais, pois sua resposta está parcialmente correta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Estude um pouco mais, pois sua resposta está incorreta.</text>
+    </incorrectfeedback>  
+ </question>
+{% endfor -%}
+</quiz>
