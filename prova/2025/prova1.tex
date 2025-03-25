@@ -1,0 +1,86 @@
+\documentclass[a4paper,11pt]{modelo/prova}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian,english]{babel}
+%\usepackage[alf]{abntcite} % ABNT
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{multicol}
+
+%===================================
+% Cabeçalho
+%===================================
+\curso{Curso de Bacharelado em Ciência da Computação}
+\prova{Avaliação - Fundamentos de Redes}
+\disciplina{Redes de Computadores I}
+
+\include{orientacoes}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+   \item (2,0) Imagine que você está configurando uma rede doméstica em um sobrado de dois andares para uma família de quatro pessoas. Os requisitos incluem: trabalho remoto, streaming de vídeos, jogos online e múltiplos dispositivos.
+
+   \textbf{Problema:} Explique a diferença entre usar cabos Ethernet e Wi-Fi para conectar os dispositivos à internet. Compare as vantagens e desvantagens de cada uma das tecnologias em termos de largura de banda e interferência.
+   Análise:
+   \begin{enumerate}[a)]
+      \item Descreva como você implementaria uma rede Ethernet em sua casa, considerando os dispositivos que se beneficiariam mais dessa conexão. Quais os benefícios e desafios dessa implementação?
+      \item Descreva como você implementaria uma rede Wi-Fi em sua casa, considerando o posicionamento do roteador para otimizar o alcance e a cobertura. Quais os benefícios e desafios dessa implementação?
+      \item Proponha uma solução híbrida (Ethernet + Wi-Fi) para atender aos requisitos da família, justificando sua escolha com base nos conceitos de largura de banda e interferência.
+   \end{enumerate}
+
+   \item (2,0) Uma empresa de médio porte, chamada ``AngelCorp'', está migrando sua infraestrutura de rede para uma arquitetura mais moderna para suportar o crescimento de suas operações e a adoção de novas tecnologias. A AngelCorp possui escritórios em diferentes cidades, um data center centralizado e um mix de tráfego em tempo real (voz e vídeo) e tráfego não sensível ao tempo (transferência de arquivos, e-mail).
+
+   \textbf{Problema:} Explique o conceito de comutação em redes de computadores. Qual é a importância da comutação para o funcionamento eficiente de uma rede? Compare os métodos de comutação de circuitos e comutação de pacotes, destacando suas principais características, vantagens e desvantagens.
+
+   Em que cenários cada método seria mais adequado para a AngelCorp? Considere os seguintes aspectos:
+   \begin{itemize}
+      \item Comutação de Circuitos: Em quais situações a comutação de circuitos seria vantajosa para a AngelCorp, considerando o tipo de tráfego que ela precisa suportar? Como ela poderia ser implementada para atender às necessidades da empresa
+      \item Comutação de Pacotes: Em quais situações a comutação de pacotes seria mais adequada para a AngelCorp, considerando o tipo de tráfego que ela precisa suportar? Como ela poderia ser utilizada para otimizar o desempenho da rede e garantir a qualidade da experiência do usuário?
+   \end{itemize}
+
+   \item (2,0) Imagine que você é o administrador de rede de uma universidade. Durante o período de provas, a rede Wi-Fi do campus fica extremamente congestionada. Muitos alunos reclamam de lentidão ao acessar materiais de estudo online, enviar trabalhos e participar de videoconferências.
+
+   \textbf{Problema:} Explique os conceitos de atraso (delay), perda (loss) e vazão (throughput) em redes de computadores. Como esses fatores interagem entre si em uma rede congestionada como a da universidade?
+
+   Dê exemplos práticos de como o congestionamento impacta a experiência dos alunos ao:
+   \begin{itemize}
+      \item Acessar vídeos de aulas gravadas, considerando o conceito de vazão.
+      \item Participar de sessões de estudo online, considerando o conceito de atraso.
+      \item Enviar trabalhos e provas pela internet, considerando o conceito de perda.
+   \end{itemize}
+
+   Quais medidas você poderia adotar como administrador de rede para mitigar o congestionamento e melhorar a qualidade da experiência dos alunos durante o período de provas?
+
+   \item (2,0) Uma empresa de desenvolvimento de software, ``AngelCorp'', possui dois escritórios, um em São Paulo (Brasil) e outro em Curitiba (Brasil). Para facilitar a colaboração entre as equipes, os escritórios estão conectados por um link de comunicação de alta velocidade que passa por alguns equipamentos intermediários.
+   
+   \textbf{Dados:}
+   \begin{itemize}
+      \item A distância entre os escritórios é de aproximadamente 400 km.
+      \item A velocidade de propagação do sinal no meio físico (fibra óptica) é de $2 * 10^8 m/s$.
+      \item A capacidade do link de comunicação é de 1 Gbps.
+      \item O caminho entre os escritórios inclui 3 roteadores intermediários.
+      \item Cada roteador introduz um atraso de processamento de 1 ms por pacote.
+   \end{itemize}
+
+   \textbf{Problema:} 
+   \begin{enumerate}
+      \item Um desenvolvedor em São Paulo precisa enviar um arquivo de código-fonte de 4 MB para um colega em Curitiba. Calcule:
+      \begin{itemize}
+         \item O atraso de propagação (propagation delay).
+         \item O atraso de transmissão (transmission delay).
+         \item O atraso de processamento total (considerando os 3 roteadores).
+         \item O atraso total (soma de todos os atrasos).
+      \end{itemize}
+      Com base nos seus cálculos, explique como a distância e o número de roteadores intermediários afetam o atraso total na comunicação entre os escritórios, conforme discutido no Capítulo 1 do Kurose.
+   \end{enumerate}
+
+   \item Descreva detalhadamente o Modelo OSI e a arquitetura TCP/IP. Explique as funções de cada camada em ambos os modelos e compare suas principais diferenças, conforme discutido no Capítulo 1 do Kurose. Dê exemplos de como os protocolos HTTP, TCP e IP se encaixam nessas arquiteturas e como eles são utilizados na comunicação entre um navegador web e um servidor web.
+   \end{enumerate}
+
+\end{document}
