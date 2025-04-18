@@ -1,2 +1,2 @@
 # gbcc_redes1
-- [Livro](https://htmlpreview.github.io/?https://github.com/info-ifc-vda/2022-gbcc_redes1/blob/main/livro/book/index.html)
+- [Kurose 8ed - Portugês](https://archive.org/details/kurose-redes-de-computadores-e-a-internet-8a/page/54/mode/2up?view=theater)

@@ -1,0 +1,86 @@
+\documentclass[a4paper,11pt]{modelo/prova}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian,english]{babel}
+%\usepackage[alf]{abntcite} % ABNT
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{multicol}
+
+%===================================
+% Cabeçalho
+%===================================
+\curso{Curso de Bacharelado em Ciência da Computação}
+\prova{Avaliação - Fundamentos de Redes}
+\disciplina{Redes de Computadores I}
+
+\include{orientacoes}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+   \item (2,0) Imagine que você está configurando uma rede doméstica em um sobrado de dois andares para uma família de quatro pessoas. Os requisitos incluem: trabalho remoto, streaming de vídeos, jogos online e múltiplos dispositivos.
+
+   \textbf{Problema:} Qual a diferença entre usar cabos de rede (Ethernet) e Wi-Fi para ligar os aparelhos na internet?
+   
+   \textbf{Análise:}
+   \begin{enumerate}[a)]
+      \item Como você faria para usar cabos de rede em casa? Quais aparelhos você ligaria com cabos? Quais as vantagens e dificuldades disso?
+      \item Como você faria para usar o Wi-Fi em casa? Onde você colocaria o roteador para o Wi-Fi pegar bem em todos os lugares? Quais as vantagens e dificuldades disso?
+      \item Qual a melhor forma de usar os dois (cabos e Wi-Fi) juntos para atender a família? Por que você acha que essa é a melhor opção?
+   \end{enumerate}
+
+   \item (2,0) Uma empresa chamada AngelCorp está mudando a rede de computadores para ficar mais moderna. A empresa tem escritórios em várias cidades, um data center e precisa de internet rápida para voz, vídeo e arquivos.
+
+   \textbf{Problema:} O que é ``comutação'' em redes de computadores? Por que ela é importante?
+
+   Compare os dois tipos de comutação:
+   \begin{itemize}
+      \item Comutação de Circuitos: Como seria usar esse tipo de comutação na AngelCorp? Em quais situações ele seria bom?
+      \item Como seria usar esse tipo de comutação na AngelCorp? Em quais situações ele seria melhor?
+   \end{itemize}
+
+   \item (2,0) Você é o responsável pela rede de internet de uma universidade. Na época de provas, a internet fica muito lenta. Os alunos reclamam que não conseguem acessar os materiais de estudo, enviar trabalhos e assistir às aulas online.
+
+   \textbf{Problema:} Explique o que são ``atraso'', ``perda'' e ``vazão'' em redes de computadores. Como eles afetam a internet quando ela está congestionada?
+
+   Dê exemplos de como a internet lenta atrapalha os alunos quando eles precisam:
+   \begin{itemize}
+      \item Assistir vídeos de aulas.
+      \item Participar de aulas online.
+      \item Enviar trabalhos e provas.
+
+      O que você faria para melhorar a internet na época de provas?
+
+   \item (2,0) A empresa AngelCorp tem dois escritórios, um em São Paulo e outro em Curitiba. Os escritórios estão ligados por uma conexão rápida.
+   
+   \textbf{Dados:}
+   \begin{itemize}
+      \item A distância entre os escritórios é de aproximadamente 400 km.
+      \item A velocidade de propagação do sinal no meio físico (fibra óptica) é de $2 * 10^8 m/s$.
+      \item A conexão tem capacidade de 1 1 Gbps.
+      \item No caminho entre os escritórios, há 3 roteadores.
+      \item Cada roteador atrasa 1 ms por pacote.
+   \end{itemize}
+
+   \textbf{Problema:} 
+   \begin{enumerate}
+      \item Um programador em São Paulo precisa enviar um arquivo de 4 MB para um colega em Curitiba. Calcule:
+      \begin{itemize}
+         \item O atraso de propagação (propagation delay).
+         \item O atraso de transmissão (transmission delay).
+         \item O atraso de processamento total (considerando os 3 roteadores).
+         \item O atraso total (soma de todos os atrasos).
+      \end{itemize}
+      Explique como a distância e os roteadores afetam o tempo que leva para o arquivo chegar, usando o que você aprendeu no Capítulo 1 do livro do Kurose.
+   \end{enumerate}
+
+   \item (2,0) Descreva o Modelo OSI e a arquitetura TCP/IP. Explique o que cada camada faz e compare os dois modelos. Use exemplos de como os protocolos HTTP, TCP e IP funcionam juntos quando você acessa um site.
+   \end{enumerate}
+
+\end{document}
