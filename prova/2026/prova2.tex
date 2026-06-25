@@ -1,0 +1,99 @@
+\documentclass[11pt, addpoints]{modelo/prova2}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian]{babel}
+
+\include{orientacoes}
+\begin{document}
+
+\maketitle 
+
+\question[0.5] Sobre o protocolo IPv4, considere as seguintes afirmações:
+    \begin{statements}
+        \item O endereço IP possui 32 bits, divididos em 4 octetos.
+        \item A máscara de sub-rede define qual parte do endereço identifica a rede e qual identifica o host.
+        \item O NAT permite que múltiplos dispositivos internos compartilhem um único endereço IP público.
+    \end{statements}
+    É correto o que se afirma em:
+    \begin{choices}
+        \item I, apenas.
+        \item II, apenas.
+        \item I e III, apenas.
+        \item II e III, apenas.
+        \item I, II e III.
+    \end{choices} \answer{E}
+\question[0.5] Qual é a métrica utilizada pelo protocolo RIP para determinar o melhor caminho?    
+    \begin{choices}
+        \item Largura de banda (Bandwidth).        
+        \item Custo (Cost).
+        \item Contagem de saltos (Hop Count).
+        \item Atraso (Delay).
+        \item Carga (Load).
+    \end{choices} \answer{C}
+\question[0.5] No algoritmo de Dijkstra, utilizado pelo protocolo OSPF, qual é o requisito fundamental para o cálculo do menor caminho?
+    \begin{choices}
+        \item Conhecimento apenas dos vizinhos diretos (Vetor de Distância).
+        \item Visão global da topologia da rede (Estado de Enlace).
+        \item Limite máximo de 15 saltos para evitar loops.
+        \item Uso exclusivo de portas UDP para troca de tabelas.
+        \item Existência de pesos negativos nas arestas para balanceamento.
+    \end{choices} \answer{B}
+
+\question[0.5] Um roteador recebe um pacote com endereço de destino:\\ \verb|11001000 00010111 00011000 10101010|\\[0.5em] Na sua tabela de encaminhamento, existem as seguintes entradas:
+    \begin{statements}
+        \item \verb|11001000 00010111 00010*** -> Interface 0|
+        \item \verb|11001000 00010111 00011000 -> Interface 1|
+        \item \verb|11001000 00010111 00011*** -> Interface 2|
+    \end{statements}
+    De acordo com a regra de \textbf{Prefix Matching} (Correspondência de Prefixo mais Longo), o pacote será enviado para:
+
+    \begin{choices}
+        \item Interface 0.
+        \item Interface 1.
+        \item Interface 2.
+        \item Interface 3 (Default).
+        \item O pacote será descartado por ambiguidade.
+    \end{choices} \answer{B}
+\question[0.5] O IPv6 não apenas expandiu o espaço de endereçamento para 128 bits, mas também redefiniu os tipos de comunicação permitidos na camada de rede. Sobre as categorias de endereçamento IPv6, assinale a alternativa correta:
+    \begin{choices}
+        \item O IPv6 mantém o suporte a mensagens de Broadcast, utilizando-as para a resolução de nomes na rede local.
+        \item O endereço de Anycast é atribuído a um grupo de interfaces, e o pacote enviado a esse endereço é entregue a todas as interfaces do grupo simultaneamente.
+        \item O endereço de Anycast permite que um pacote seja entregue à interface mais próxima (de acordo com a métrica do protocolo de roteamento) entre um grupo de interfaces que compartilham o mesmo endereço.
+        \item Os endereços Link-Local são roteáveis na Internet e substituem a necessidade de endereços globais em redes corporativas.
+        \item A notação hexadecimal do IPv6 exige que todos os zeros à esquerda sejam obrigatoriamente escritos para evitar ambiguidades no plano de controle.
+    \end{choices} \answer{C}
+\question[0.5] Durante o processo de obtenção de um endereço IP via DHCP, um host que acaba de se conectar à rede da AngelCorp realiza uma troca de quatro mensagens principais. Sobre esse processo, é correto afirmar que:
+    \begin{choices}
+        \item A mensagem de DHCP Discover é enviada via unicast diretamente para o endereço IP do servidor DHCP.
+        \item O servidor utiliza a mensagem de DHCP Request para oferecer formalmente um endereço IP disponível ao cliente.
+        \item O cliente envia um DHCP Request para confirmar que aceita a oferta de um servidor específico, informando aos demais servidores que suas ofertas podem ser liberadas.
+        \item O processo é finalizado com o DHCP Offer, onde o cliente agradece ao servidor pela concessão do endereço.
+        \item Caso o servidor não envie um DHCP Ack, o cliente assume automaticamente o endereço 127.0.0.1 para garantir conectividade local.
+    \end{choices} \answer{C}
+\question[0.5] A arquitetura da camada de rede evoluiu de uma arquitetura tradicional, em que todas as funções eram executadas pelo mesmo componente, para as SDNs (Redes Definidas por Software), com uma separação clara entre as funções de decisão e as funções de execução. Sobre a interação entre o Plano de Controle e o Plano de Dados, assinale a alternativa correta:
+    \begin{choices}
+        \item Na arquitetura SDN (Redes Definidas por Software), o Plano de Controle é centralizado em um servidor remoto, que distribui as tabelas de fluxo para os dispositivos de rede.
+        \item  O Plano de Dados é responsável por executar algoritmos complexos de roteamento, como o OSPF, em cada interface de entrada.
+        \item O Plano de Controle atua localmente em cada roteador, sendo o único responsável por mover o pacote da porta de entrada para a porta de saída correta.        
+        \item O encaminhamento (forwarding) é uma função do Plano de Controle que determina a rota fim-a-fim que um pacote deve percorrer na Internet.
+        \item O Plano de Dados utiliza protocolos como BGP para trocar informações de alcançabilidade com roteadores vizinhos de outros Sistemas Autônomos.
+    \end{choices} \answer{A}
+\question[0.5] Diferente dos protocolos IGP, que buscam a eficiência técnica dentro de um Sistema Autônomo (AS), o BGP (Border Gateway Protocol) opera sob uma lógica de Vetor de Caminho (Path Vector). Sobre os critérios de seleção de rotas no BGP, é correto afirmar que:
+    \begin{choices}
+        \item O BGP sempre escolherá o caminho com o menor número de saltos de roteadores (hops), independentemente dos ASes atravessados.
+        \item O atributo AS-PATH é utilizado primariamente para calcular a latência em milissegundos entre o roteador de borda e o destino final.        
+        \item O BGP utiliza o algoritmo de Dijkstra para garantir que todos os roteadores da Internet possuam a mesma visão global da topologia.
+        \item O protocolo BGP opera na camada de enlace, o que permite que ele ignore as políticas de roteamento das camadas superiores para acelerar a convergência.
+        \item Uma rota pode ser rejeitada por um administrador de rede, mesmo sendo o caminho mais curto, caso ela atravesse um Sistema Autônomo de um concorrente comercial.
+    \end{choices} \answer{E}
+\question[2] Um administrador de rede precisa dividir o bloco de endereços 192.168.10.0/24 para atender a três departamentos da AngelCorp:
+\begin{itemize}
+    \item Vendas: 60 hosts.
+    \item Engenharia: 30 hosts.
+    \item Administrativo: 12 hosts.
+\end{itemize}
+Utilizando a técnica de CIDR e VLSM, determine as máscaras de sub-rede (em notação decimal e /X) para cada departamento, visando o menor desperdício de endereços possível. Justifique sua escolha baseada na quantidade de bits necessários para a parte de host.
+\question[2] Analise o cenário de um roteador de borda (R0) que interliga um Sistema Autônomo (AS) empresarial à Internet. Internamente, o AS utiliza OSPF, mas para se comunicar com o ISP, utiliza BGP. Explique a diferença fundamental entre os objetivos de um protocolo IGP (como OSPF) e um protocolo EGP (como BGP). Em sua resposta, discuta por que o BGP prioriza ``políticas e acordos comerciais'' em vez de apenas a ``performance técnica'' (menor caminho), conforme visto no cenário AngelCorp.
+\question[2] O Plano de Dados e o Plano de Controle são as duas funções principais da camada de rede. Defina as funções de Encaminhamento (Forwarding) e Roteamento (Routing), explicando em qual plano cada uma atua. Além disso, descreva como essas funções interagem para garantir que os pacotes de dados sejam entregues corretamente aos seus destinos finais.
+
+
+\end{document}
