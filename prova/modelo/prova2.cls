@@ -62,7 +62,7 @@
 \newcommand{\question}[1][]{%
     \stepcounter{questnum}%
     \par\noindent
-    \textbf{\thequestnum.} \ifthenelse{\equal{#1}{}}{}{(#1 pontos)} \quad    
+    \textbf{\thequestnum.} \ifthenelse{\equal{#1}{}}{}{(#1 pontos)}     
 }
 
 % Ambiente para alternativas (a, b, c...)

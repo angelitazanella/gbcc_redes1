@@ -1,0 +1,128 @@
+
+\documentclass[12pt]{modelo/prova2}
+
+\orientacoes{
+1. Leia cada questão com atenção. \\
+2. Marque apenas uma resposta correta com um X. \\
+3. Se precisar de ajuda para entender a pergunta, sinalize para a professora. \\[.5em] 
+\textbf{Boa prova!}
+}
+
+\begin{document}
+\maketitle
+
+\question[1.0] O endereço \textbf{IPv4} é a identificação de um dispositivo na rede. Quantos \textbf{bits} existem em um endereço IPv4?
+\begin{choices}
+    \item 16 bits.
+    \item 32 bits.
+    \item 64 bits.
+    \item 128 bits.
+\end{choices}
+\answer{B}
+
+\question[1.0] Os protocolos de roteamento usam \textbf{métricas} para escolher o melhor caminho. Relacione o protocolo à sua métrica correta:
+
+\begin{center}
+\begin{tabular}{ |p{2cm}|p{6cm}| } 
+ \hline
+ \textbf{Protocolo}& \textbf{Métrica} \\ 
+ \hline
+ RIP  & Contagem de Saltos (Hops) \\ 
+ OSPF & Custo (Baseado em Banda) \\ 
+ \hline
+\end{tabular}
+\end{center}
+Com base na tabela acima, qual protocolo escolhe o caminho com o \textbf{menor número de roteadores no meio}?
+
+\begin{choices}
+\item Protocolo IP.
+\item Protocolo OSPF.
+\item Protocolo RIP.
+\item Protocolo DHCP.
+\end{choices}
+\answer{C}
+
+\question[1.0] O roteador usa o \textbf{Prefix Matching} (Casamento de Prefixo) para enviar o pacote. Observe a tabela simplificada abaixo:
+\begin{center}
+\begin{tabular}{ |p{4cm}|p{4cm}| } 
+ \hline
+ \textbf{Prefixo de Destino}& \textbf{Interface de Saída}\\ 
+ \hline
+ 11001000 & Interface 0 \\
+ 11001001 & Interface 1 \\
+ \hline
+\end{tabular}
+\end{center}
+Se um pacote chegar com o destino \verb|11001001|, para qual interface ele será enviado?
+\begin{choices}
+\item Interface 0
+\item Interface 1
+\item Nenhuma interface
+\end{choices}
+\answer{B}
+\newpage
+\question[1.0]  O \textbf{IPv6} foi criado porque os endereços IPv4 acabaram. Qual é a principal diferença do IPv6 em relação ao IPv4?
+\begin{choices}
+\item O IPv6 possui muito mais endereços (128 bits) e não usa mais o Broadcast.
+\item O IPv6 é menor que o IPv4.
+\item O IPv6 só funciona em redes sem fio.
+\item O IPv6 é mais lento que o IPv4.
+\end{choices}
+\answer{B}
+
+\question[1.0] O protocolo \textbf{DHCP} serve para entregar endereços IP automaticamente. Qual é a \textbf{ordem correta} das mensagens enviadas?
+\begin{choices}
+    \item Discover $\to$ Offer $\to$ Request $\to$ Ack.
+    \item Request $\to$ Offer $\to$ Discover $\to$ Ack.
+    \item Ack $\to$ Request $\to$ Offer $\to$ Discover.
+    \item Offer $\to$ Discover $\to$ Request $\to$ Ack.
+\end{choices}
+\answer{A}
+
+\question[1.0] Nas redes \textbf{SDN} (Redes Definidas por Software), dividimos as funções do roteador. Qual plano é responsável por \textbf{decidir para onde o pacote deve ir} (o "cérebro" da rede)?
+\begin{choices}
+\item Plano de Dados (Data Plane).
+\item Plano de Controle (Control Plane).
+\item Plano de Energia.
+\item Plano de Aplicação.
+\end{choices}
+\answer{B}
+
+\question[1.0] O protocolo \textbf{BGP} é usado para conectar grandes redes na Internet. Como o BGP escolhe o caminho?
+\begin{choices}
+    \item Ele escolhe sempre o caminho mais curto em termos de saltos (hops).
+    \item Ele escolhe sempre o caminho mais rápido, como um GPS.
+    \item Ele escolhe o caminho de forma aleatória.
+    \item Ele escolhe baseado em políticas comerciais e acordos entre empresas. 
+\end{choices}
+\answer{D}
+
+\question[1.0] Você precisa configurar uma rede para um departamento com 60 computadores (hosts). Qual máscara de sub-rede (VLSM) é a mais adequada para suportar exatamente essa quantidade?
+\begin{choices}
+    \item /25 (Suporta até 126 hosts).
+    \item /26 (Suporta até 62 hosts).
+    \item /27 (Suporta até 30 hosts).
+    \item /28 (Suporta até 14 hosts).
+\end{choices}
+\answer{B}
+
+\question[1.0] O protocolo \textbf{ICMP} é usado para enviar mensagens de erro e teste. Qual comando usamos para \textbf{testar se um computador está conectado} na rede?
+\begin{choices}
+\item Comando DHCP.
+\item Comando PING.
+\item Comando Traceroute.
+\item Comando FTP.
+\end{choices}
+\answer{B}
+
+\question[1.0] No Modelo OSI e no Modelo TCP/IP, o \textbf{Roteador} é um equipamento principal. Em qual camada o roteador trabalha?
+\begin{choices}
+\item Camada de Aplicação.
+\item Camada de Transporte.
+\item Camada de Rede (ou Camada Internet).
+\item Camada Física.
+\end{choices}
+\answer{C}
+
+
+\end{document}
