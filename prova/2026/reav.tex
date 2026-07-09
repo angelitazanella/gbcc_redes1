@@ -1,0 +1,54 @@
+\documentclass[11pt, addpoints]{modelo/prova2}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian]{babel}
+
+\include{orientacoes}
+\begin{document}
+
+\maketitle 
+\question[1.5] Sobre fundamentos de redes e meios físicos, responda ao que se pede:
+\begin{choices}
+    \item Explique a diferença entre os conceitos de largura de banda (bandwidth) e taxa de transmissão (throughput) em uma rede de computadores. 
+    \item Explique os quatro tipos de atraso no envio de um pacote em uma rede de computadores.
+    \item Em um ambiente hospitalar com equipamentos eletrônicos que geram campos magnéticos intensos, qual meio físico (par trançado ou fibra óptica) é mais indicado? Justifique com base nas propriedades físicas do meio. 
+\end{choices}
+\question[2] Uma empresa de 20 funcionários utiliza um Hub para interconectar todos os computadores e enfrenta lentidão com frequência. Foi proposta a troca por um Switch de Camada 2.
+\begin{choices}
+    \item Explique a diferença fundamental entre Hub e Switch no encaminhamento de quadros e como isso impacta os domínios de colisão.
+    \item Descreva como o Switch constrói dinamicamente sua tabela de endereços MAC e o que ocorre ao receber um quadro cujo endereço MAC de destino não está na tabela. 
+    \item O que são VLANs e como podem contribuir para a segurança e o desempenho dessa empresa?
+\end{choices}
+
+\question[1.5] A respeito de redes sem fio (IEEE 802.11), discorra sobre os itens a seguir:
+\begin{choices}
+    \item Diferencie o funcionamento do CSMA/CD (Ethernet) e do CSMA/CA (Wi-Fi). Por que as redes sem fio não utilizam detecção de colisão durante a transmissão?
+    \item Explique o problema do terminal escondido e como o mecanismo RTS/CTS pode mitigá-lo.
+    \item Por que aplicações de tempo real como videoconferência tendem a sofrer mais em redes Wi-Fi do que em redes Ethernet cabeadas? Relacione sua resposta ao mecanismo de retransmissão na camada de enlace. 
+\end{choices}
+\question[1.5] No que se refere ao Modelo OSI, Arquitetura TCP/IP e VLANs, resolva:
+\begin{choices}
+    \item Compare os Modelos OSI e TCP/IP quanto ao número de camadas e às funções das camadas de Transporte e Rede (Internet).
+    \item Explique por que o protocolo IP é classificado como ``melhor esforço'' (best-effort) e como o protocolo TCP atua para garantir a confiabilidade na entrega dos dados fim-a-fim. 
+    \item Qual a função do padrão IEEE 802.1Q e como ele permite que múltiplas VLANs trafeguem por um mesmo enlace físico entre switches?
+\end{choices}
+\newpage
+\question[2.5] Um administrador de rede precisa dividir o bloco 192.168.30.0/24 para atender a três departamentos:
+\begin{itemize}
+    \item Marketing: 55 hosts
+    \item Desenvolvimento: 28 hosts
+    \item Suporte: 8 hosts
+\end{itemize}
+Utilizando a técnica de VLSM (Variable Length Subnet Mask), determine:
+\begin{choices}
+    \item A máscara de sub-rede (em notação decimal) e o prefixo (em notação /X) para cada departamento, justificando a escolha com base na quantidade de bits necessários para a parte de host.
+    \item O intervalo de endereços IP utilizáveis (primeiro e último host válido) e o endereço de broadcast de cada sub-rede. 
+    \item A quantidade total de endereços desperdiçados (não utilizados) após a divisão.
+\end{choices}
+\question[2.0] Acerca de Roteamento: IGP, EGP e Planos da Camada de Rede, elabore sua resposta sobre:
+\begin{choices}
+    \item Diferencie protocolos IGP (como OSPF e RIP) de protocolos EGP (como BGP) quanto aos seus objetivos, métricas e alcance.
+    \item Explique a diferença entre Roteamento (Routing) e Encaminhamento (Forwarding), indicando em qual plano — Plano de Controle ou Plano de Dados — cada função atua.
+    \item Em cenários reais da Internet, o BGP frequentemente prioriza políticas e acordos comerciais em vez de escolher o caminho tecnicamente mais curto. Explique por que isso ocorre e dê um exemplo de situação em que uma rota pode ser rejeitada mesmo sendo a mais curta. 
+\end{choices}
+
+\end{document}
